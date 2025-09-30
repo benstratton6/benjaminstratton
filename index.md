@@ -56,6 +56,8 @@ Other notable highlights alongside my academic pursuits have been working with t
 
 ## Talks
 
+- **Purity Enhancement from Athermaility Enhancement,** [_slides_](Talk_5_Purity_Enhancement_from_Athermaility_Enhancement.pptx)
+    1. University of Geneva, September 2025
 - **Informational Non-equilibrium Concentration,** [_slides_](Talk_4_Informational_non-equilibrium_concentration.pptx)
     1. Quantum Resource Theories Workshop, Jeju Island, South Korea, March 2025.
     2. Fundamental Limits of Quantum Technologies, Dublin, Ireland, August 2025. 
