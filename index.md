@@ -57,17 +57,19 @@ Other notable highlights alongside my academic pursuits have been working with t
 ## Talks
 
 - **Purity Enhancement from Athermaility Enhancement,** [_slides_](Talk_5_Purity_Enhancement_from_Athermaility_Enhancement.pptx)
-    1. University of Geneva, September 2025
+    1. Département de Physique Appliquée, University of Geneva, Switzerland, September 2025 (_Seminar_)
+    2. Grup d'Informació Quàntica (GIQ), Universitat Autònoma de Barcelona, Spain, October 2025. (_Seminar_)
 - **Informational Non-equilibrium Concentration,** [_slides_](Talk_4_Informational_non-equilibrium_concentration.pptx)
-    1. Quantum Resource Theories Workshop, Jeju Island, South Korea, March 2025.
-    2. Fundamental Limits of Quantum Technologies, Dublin, Ireland, August 2025. 
+    1. Quantum Resource Theories Workshop, Jeju Island, South Korea, March 2025. (_Conference_)
+    2. Fundamental Limits of Quantum Technologies, Ireland, August 2025. (_Conference_)
+    3. Young Quantum Information Scientists (YQIS), Spain, October 2025. (_Conference_)
 - **Where is the value in Quantum (PhDs),** [_slides_](Talk_3_Where_is_the_value_in_quantum(PhDs).pptx)
-    1. Institute of Physics (IoP) Quantum and Nano Undergraduate Day, November 2024.
+    1. Institute of Physics (IoP) Quantum and Nano Undergraduate Day, November 2024. (_Invited_)
 - **Operational Interpretation of the Choi Rank Through k-State Exclusion,** [_slides_](Talk_2_Operational_Interpretation_of_the_Choi_Rank_Through_Exclusion.pptx)
-    1. Vienna University of Technology (TU Wein), October 2024,
-    2. Centre for Quantum Technologies, National University of Singapore, December 2024
+    1. Vienna University of Technology (TU Wein), Austria, October 2024. (_Seminar_)
+    2. Centre for Quantum Technologies, National University of Singapore, Singapore, December 2024. (_Seminar_)
 - **Dynamical Resource Theory of Informational Nonequilibrium Preservability,** [_slides_](Talk_1_TheDynamicalResourceTheoryofPurityPreservability-.pptx)
-    1. [Quantum Resource Theories Workshop, Singapore, December 2023.](https://youtu.be/a3fyCOOdfL4?si=ODh8oSOnI1UZdwla)
+    1. [Quantum Resource Theories Workshop](https://youtu.be/a3fyCOOdfL4?si=ODh8oSOnI1UZdwla), Singapore, December 2023.(_Conference_)
 
 
 ## CVs
