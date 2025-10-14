@@ -60,7 +60,7 @@ such that the four possibilities become the set of two-bit-string,
 \end{equation}
 The condition that one child is a $\mathrm{Boy}$ states that we want to only consider the bit-strings with at least one $0$,
 \begin{equation}
-\mathbb{B}_2^{P} = \big\{00, 01, 10 \big\},
+\mathbb{B}_2^{P} = \big\{00, 01, 10 \big\} \subseteq \mathbb{B}_2,
 \end{equation}
 where the superscript $P$ stands for prior. 
 
