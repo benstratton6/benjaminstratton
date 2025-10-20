@@ -185,9 +185,9 @@ where
 
 The d-dimensional dephasing channel has Choi-state:
 \begin{equation}
- \mathcal{J}^{\textrm{ph}} = p \vert \Phi_{00}^{+} \rangle \langle \Phi_{00}^{+} \vert + \frac{(1-p)}{d-1} \sum_{c=1}^{d-1} \vert \Phi_{0c}^{+} \rangle \langle \Phi_{0c}^{+} \vert,
+ \mathcal{J}^{\textrm{ph}} = \alpha \vert \Phi_{00}^{+} \rangle \langle \Phi_{00}^{+} \vert + \frac{(1-\alpha)}{d-1} \sum_{c=1}^{d-1} \vert \Phi_{0c}^{+} \rangle \langle \Phi_{0c}^{+} \vert,
 \end{equation}
-where $\ket{\Phi_{ab}^+} = (\mathbb{I} \otimes W_{ab}) \ket{\Phi_{00}^+}$ and $W_{ab}$ are the [Heisenberg-Weyl operators](#Generating_Maximally_Entangled_Basis_target).
+where $\alpha=(p+1)/d$ and $\ket{\Phi_{ab}^+} = (\mathbb{I} \otimes W_{ab}) \ket{\Phi_{00}^+}$ and $W_{ab}$ are the [Heisenberg-Weyl operators](#Generating_Maximally_Entangled_Basis_target).
 
 :::{dropdown} Proof
 Using the definition of the Choi-state, it can be seen that the Choi-state of a dephasing channel, $\mathcal{D}^{\rm ph}_{p}(\cdot)$, is given by
@@ -200,7 +200,7 @@ By comparison of matrix elements, one can see that this can be rewritten as
 \begin{align*}
      \mathcal{J}^{\textrm{ph}} = \alpha \ket{\Phi_{00}^+}\bra{\Phi_{00}^{+}} + \frac{(1-\alpha)}{d-1} \sum_{c=1}^{d-1} \ket{\Phi_{0c}^+}\bra{\Phi_{0c}^{+}}, \label{eq: choi-state dephase second}
 \end{align*}
-such that $\alpha = p$. To see this, consider  
+such that $\alpha = (p+1)/d$. To see this, consider  
 \begin{align*}
       &\sum_{c=1}^{d-1} \ket{\Phi_{0c}^{+}}\bra{\Phi_{0c}^{+}} \\
       &= \sum_{c=1}^{d-1} \big( \mathbb{I} \otimes W_{0,c} \big) \ket{\Phi_{00}^+}\bra{\Phi_{00}^{+}} \big( \mathbb{I} \otimes W^\dagger_{0,c} \big) \\
@@ -228,10 +228,10 @@ Inputting this into the above gives
     \begin{split}
         \mathcal{J}^{\textrm{ph}} &= \frac{\alpha}{d} \sum_{n,m=0}^{d-1} \ket{nn}\bra{mm} + \frac{1-\alpha}{d-1} \biggl[ \frac{d-1}{d} \sum_{n=m}^{d-1} \ket{nn}\bra{nn} - \frac{1}{d} \sum_{n \neq m}^{d-1}\ket{nn}\bra{mm} \biggl] \\
         &= \bigg[ \frac{\alpha}{d} + \frac{1-\alpha}{d} \bigg] \sum_{n=m}^{d-1} \ket{nn}\bra{nn} + \bigg[ \frac{\alpha}{d} - \frac{1-\alpha}{d(d-1)} \bigg] \sum_{n \neq m}^{d-1}\ket{nn}\bra{mm}_{AB} \\
-        &= \frac{1}{d}  \sum_{n=m} \ket{nn}\bra{nn} + \frac{\alpha}{d} \sum_{n \neq m}^{d-1}\ket{nn}\bra{mm},
+        &= \frac{1}{d}  \sum_{n=m} \ket{nn}\bra{nn} + \frac{p}{d} \sum_{n \neq m}^{d-1}\ket{nn}\bra{mm},
     \end{split}
 \end{equation}
-from which it can be seen that if $\alpha=p$, the two equations are equivalent. 
+if $\alpha=(p+1)/d$, the two equations are equivalent. 
 :::
 
 :::{tab-item} Depolarising Channel
