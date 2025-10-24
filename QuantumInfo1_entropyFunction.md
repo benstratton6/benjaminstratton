@@ -58,7 +58,7 @@ It can be thought of as a measure of how similar two states $\rho$ and $\sigma$ 
 
 :::{dropdown} Properties
 
-1. $S( \rho \vert \vert \sigma) \geq 0$
+1. $S( \rho \vert \vert \sigma) \geq 0$ where $S( \rho \vert \vert \sigma) = 0$ iif $\rho = \sigma$
 2. $S( \rho \vert \vert \sigma) \neq S( \sigma \vert \vert \rho)$
 3. If $\mathcal{E}$ is a quantum channel then 
 \begin{equation}
