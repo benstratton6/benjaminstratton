@@ -66,7 +66,7 @@ In addition to satisfying the above requirements, to be considered a norm on a v
 
 1. $\vert \vert AB \vert \vert \leq \vert \vert A \vert \vert ~ \vert \vert B \vert \vert$
 
-## Matrix Norm Examples
+### Matrix Norm Examples
 
 The following norms depend only on the singular values of the matrices they act upon. This means that the following conditions are true:
 \begin{align*}
@@ -312,3 +312,82 @@ where $\vert \cdot \vert$ is the absolute value and
 ::::
 
 
+## Dual Norms
+
+Consider a normed vector space $V$, where the norm is $\vert \vert \cdot \vert \vert$. 
+
+There also exists norms on the [dual space](#dual_vector_spaces_target) of $V$, denoted $V^*$, which is the space of linear functionals on $V$. One method of finding norms on the dual space is to use norms of the primal space. These so called dual-norms are defined as 
+\begin{equation}
+\vert \vert f \vert \vert^* \coloneqq \sup_{X} \big\{ \vert f(X) \vert : \vert \vert X \vert \vert \leq 1, ~ ~ X \in V \big\},
+\end{equation}
+where $f \in V^*$ and $X \in V$. Intuitively, this can be understood as finding the $X$ within the unit-ball for which the functional $f$ maximally increases. 
+
+These norms can be written in terms of only the primal vector space $V$ using the Riesz Representation Theorem. 
+```{card} 
+:header: [**Riesz Representation Theorem**](https://en.wikipedia.org/wiki/Riesz_representation_theorem#Riesz_representation_theorem)
+
+Consider a finite dimension vector space $V$, with an [inner product](#inner_product_space_definition_target), denoted by $(\cdot, \cdot)$, that is linear in the first argument and anti-linear in the second argument. 
+
+The **Riesz Representation Theorem** then states that for all linear functionals $f \in V^*$ there exists a unique vector $Y \in V$ such that 
+\begin{equation}
+f(X) = (X, Y), ~ ~ X \in V.
+\end{equation} 
+```
+Using the Riesz Representation Theorem, one can identify each linear functional $f \in V^*$ via a $Y \in V$. The dual norms are then typically written as 
+\begin{equation}
+\vert \vert Y \vert \vert^* \coloneqq \sup_{X} \big\{ \vert (X,Y) \vert : \vert \vert X \vert \vert \leq 1, ~ ~ X \in V \big\},
+\end{equation}
+where $f(X) = (X,Y)$ and the $Y$ whilst in $V$ represents an elements of $V^*$. 
+
+For the inner product $(X,Y) = \textrm{tr} \big[ X^\dagger Y \big]$, for example, the dual norm is 
+\begin{equation}
+\vert \vert Y \vert \vert^* \coloneqq \sup_{X} \big\{ \vert \textrm{tr} \big[ X^\dagger Y \big] \vert : \vert \vert X \vert \vert \leq 1, ~ ~ X \in V \big\}.
+\end{equation}
+
+### Dual Norm Examples
+
+::::{tab-set}
+:::{tab-item} Trace Norm Dual 
+:sync: tab1
+
+The dual of the trace norm (one norm), $\vert \vert A \vert \vert_1$, is 
+\begin{equation}
+\vert \vert A \vert \vert_1^* = \vert \vert A \vert \vert_{\infty},
+\end{equation}
+such that the dual norm of the trace norm is the infinity norm.
+
+:::
+:::{tab-item} Infinity Norm Example
+:sync: tab2
+
+
+The dual of the infinity norm (operator norm), $\vert \vert A \vert \vert_{\infty}$, is 
+\begin{equation}
+\vert \vert A \vert \vert_{infty}^* = \vert \vert A \vert \vert_{1}
+\end{equation}
+such that the dual norm of the infinity norm is the trace norm.
+
+::::
+
+Note, some norms as self dual, meaning the dual of the norm returns the same norm. 
+
+### The Dual of a Dual
+
+The dual of a dual norm returns the original norm. 
+
+This can be used to give alternative ways to phrase the original norm. For example, the dual of the trace norm is defined as 
+\begin{equation}
+\vert \vert Y \vert \vert_{\rm tr}^* \coloneqq \sup_{X} \big\{ \vert (X,Y) \vert : \vert \vert X \vert \vert_{\rm tr} \leq 1, ~ ~ X \in V \big\}.
+\end{equation}
+Now, the dual of $\vert \vert Y \vert \vert_{\rm tr}^*$ is defined as
+\begin{equation}
+\big[ \vert \vert Y \vert \vert_{\rm tr}^* \big]^* \coloneqq \sup_{X} \big\{ \vert (X,Y) \vert : \vert \vert X \vert \vert_{\rm tr}^* \leq 1, ~ ~ X \in V \big\}.
+\end{equation}
+But, the dual of the dual is the original norm, such that 
+\begin{equation}
+\big[ \vert \vert Y \vert \vert_{\rm tr}^* \big]^* = \vert \vert Y \vert \vert_{\rm tr}.
+\end{equation}
+It was then shown in the examples above that the dual of the trace norm is the infinity norm. Hence, an equivalent form for the trace norm is 
+\begin{equation}
+\vert \vert Y \vert \vert_{\rm tr} \coloneqq \sup_{X} \big\{ \vert (X,Y) \vert : \vert \vert X \vert \vert_{\infty} \leq 1, ~ ~ X \in V \big\}.
+\end{equation}

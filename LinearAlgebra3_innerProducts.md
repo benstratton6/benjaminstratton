@@ -35,11 +35,34 @@ To be an inner product the functional $(\cdot, \cdot)$ must obeys the following 
 2. $(\psi,\omega) = (\omega, \psi)^{*}$
     - Conjugate symmetry
     - If $V$ is defined over $\mathbb{R}$ then $(\psi,\omega) = (\omega, \psi)$
-3. $(\psi, a \omega) = a (\psi, \omega)$
-    - Linearity in the second argument
-    - If $V$ is defined over $\mathbb{C}$ then $(a \psi,\omega) = \overline{a}(\psi, \omega)$
-4. $(\psi, \omega + \sigma) = (\psi,\omega) + (\psi, \sigma)$
+3. $(a\psi, \omega) = a (\psi, \omega)$
+    - Linearity in the first argument
+    - If $V$ is defined over $\mathbb{C}$ then $(a \psi,\omega) = a^*(\psi, \omega)$
+4. $(\omega + \sigma, \psi) = (\omega, \psi) + (\sigma, \psi)$
     - Additivity
+
+## Implication
+
+Given a vector space $V$ with an inner product as defined above, one finds that 
+\begin{equation}
+(\sigma, \psi + \omega) = (\sigma,\psi) + (\sigma, \omega), ~ ~ ~ (\psi, a\omega) = a^* (\psi, \omega)
+\end{equation}
+which is called being anti-linear in the second argument. Hence, linearity in the first argument implies anti-linearity in the second argument. 
+
+:::{dropdown} Proof
+\begin{align*}
+(\psi, a\omega) &= (a \omega, \psi)^* \\
+&= \big[a (\omega, \psi) \big]^* \\
+&= a^* (\omega, \psi)^* \\
+&= a^* (\psi, \omega)
+\end{align*}
+\begin{align*}
+(\sigma, \psi + \omega) &= (\psi + \omega, \sigma)^*\\
+&= \big[(\psi, \sigma)  + (\omega, \sigma) \big ]^* \\
+&= (\psi, \sigma)^*  + (\omega, \sigma)^* \\\
+&= (\sigma, \psi)  + (\sigma, \omega).
+\end{align*}
+:::
 
 ## Cauchy–Schwarz inequality
 
