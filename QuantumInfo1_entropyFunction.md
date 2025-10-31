@@ -60,13 +60,14 @@ It can be thought of as a measure of how similar two states $\rho$ and $\sigma$ 
 
 1. $S( \rho \vert \vert \sigma) \geq 0$ where $S( \rho \vert \vert \sigma) = 0$ iif $\rho = \sigma$
 2. $S( \rho \vert \vert \sigma) \neq S( \sigma \vert \vert \rho)$
-3. If $\mathcal{E}$ is a quantum channel then 
+3. $S(U \rho U^{\dagger} \vert \vert U \sigma U^{\dagger}) = S(\rho \vert \vert \sigma) $
+4. If $\mathcal{E}$ is a quantum channel then 
 \begin{equation}
 S( \rho \vert \vert \sigma) \geq S( \mathcal{E}(\rho) \vert \vert \mathcal{E}(\sigma)).
 \end{equation}
   - This is the [data processing inequality.](https://en.wikipedia.org/wiki/Data_processing_inequality)
-4. $S( \rho \vert \vert \mathbb{I}/d) = \log(d) - S(\rho)$
-5. If $\sum_{i} p_i = 1$ then 
+5. $S( \rho \vert \vert \mathbb{I}/d) = \log(d) - S(\rho)$
+6. If $\sum_{i} p_i = 1$ then 
 \begin{equation}
 S \bigg( \sum_{i} p_i \rho_i \vert \vert \sum_i p_i \sigma_i \bigg) \leq \sum_i p_i S(\rho_i \vert \vert \sigma_i) 
 \end{equation}

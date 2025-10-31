@@ -363,7 +363,7 @@ such that the dual norm of the trace norm is the infinity norm.
 
 The dual of the infinity norm (operator norm), $\vert \vert A \vert \vert_{\infty}$, is 
 \begin{equation}
-\vert \vert A \vert \vert_{infty}^* = \vert \vert A \vert \vert_{1}
+\vert \vert A \vert \vert_{\infty}^* = \vert \vert A \vert \vert_{1}
 \end{equation}
 such that the dual norm of the infinity norm is the trace norm.
 
