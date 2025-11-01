@@ -1,5 +1,5 @@
 ---
-title: Probability
+title: Probability Examples
 subject: Tutorial
 subtitle: 
 # short_title: How to MyST

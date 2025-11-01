@@ -78,7 +78,8 @@ parts:
       - file: mathematicalNotes3_majorisation
       - file: mathematicalNotes1_preorder
       - file: mathematicalNotes2_convexity
-      - file: mathematicalNotes5_probability
+      - file: mathematicalNotes6_entropies
+      - file: mathematicalNotes5_probability_examples
   - caption: Economics 
     chapters:
       - file: economics1_utilityFunctions.md

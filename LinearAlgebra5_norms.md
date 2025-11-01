@@ -111,12 +111,12 @@ Note, for [Hermitian](#hermitian_adjoint_page_target) matrices, the singular val
 :::{tab-item} Trace Norm
 :sync: tab3
 
-Let $A~\in~M$ be a matrix such that $A~\in~\mathbb{M}_{mn}(\mathbb{F})$. The trace norm is given by
+Let $A~\in~M$ be a matrix such that $A~\in~\mathbb{M}_{mn}(\mathbb{F})$. The trace norm (or one norm) is given by
 (trace_norm_target_norms)=
 \begin{equation}
 \vert \vert A \vert \vert_{\textrm{tr}} = \sum_{i} \mu_{i}(A),
 \end{equation}
-where $\mu_{i}(A)$ are the singular value of $A$. Hence, the Trace norm of $A$ is the sum of singular values of A. 
+where $\mu_{i}(A)$ are the singular value of $A$. Hence, the Trace norm of $A$ is the sum of singular values of A. The trace norm is often instead denoted $\vert \vert A \vert \vert_1$.
 
 It is also given by 
 \begin{equation}
