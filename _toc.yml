@@ -53,6 +53,7 @@ parts:
       - file: QuantumInfo5_teleportation
       - file: QuantumInfo6_superDenseCoding
       - file: QuantumInfo7_noCloning
+      # - file: QuantumInfo9_stateDiscrimination
       - file: QuantumInfo4_stateExclusion
       - file: QuantumInfo1_entropyFunction
       # - file: QuantumInfo8_Haar_Measure
