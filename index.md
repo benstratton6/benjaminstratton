@@ -39,6 +39,7 @@ Other notable highlights alongside my academic pursuits have been working with t
 
 **2025**
 
+- [Unspeakable Coherence Concentration](https://doi.org/10.48550/arXiv.2512.04255)
 - [An Algorithm for Estimating $\alpha$-Stabilizer Rényi Entropies via Purity](https://doi.org/10.48550/arXiv.2507.02540)
 - [Cooling a Qubit with $n$ Others](https://doi.org/10.48550/arXiv.2506.10059)
 
@@ -70,6 +71,7 @@ Other notable highlights alongside my academic pursuits have been working with t
     1. [Quantum Resource Theories Workshop](https://youtu.be/a3fyCOOdfL4?si=ODh8oSOnI1UZdwla), Singapore, December 2023. (_**Contributed**_)
 - **Where is the value in Quantum (PhDs) — Outreach,** [_slides_](Talk_3_Where_is_the_value_in_quantum(PhDs).pptx)
     1. Institute of Physics (IoP) Quantum and Nano Undergraduate Day, UK, November 2024. (_**Invited**_)
+    2. Institute of Physics (IoP) Quantum and Nano Undergraduate Day, UK, November 2025. (_**Invited**_)
 
 ## CVs
 
