@@ -8,10 +8,24 @@ title: Home
 # license: CC-BY-4.0
 keywords: Quantum Information, Quantum Mechanics
 ---
+## About Me
+
+My name is Ben Stratton and I am a fourth year PhD student at the University of Bristol studying problems in quantum information theory. My current interests are in and around the fields of quantum resource theories, quantum thermodynamics, and quantum computation.
+
+:::{figure} ./images/BenStrattonHeadShot.png
+:name: BenStratonHeadShot
+:width: 200px
+:align: center
+:::
+
+Originally from Devon, England, I studied for my MSci in physics at the University of Bristol between 2016-2020, taking units in Quantum Information Theory, Quantum Computation, Advance Quantum Mechanics and Advance Computational Physics. I returned to Bristol in 2021 to join the Quantum Engineering Centre for Doctoral Training. During the first year of my PhD I undertook an interdisciplinary range of teaching that included courses in Quantum Light and Matter, Applied Quantum Theory, Nanofabrication and Quantum Systems Engineering. I then joined the Quantum Information Theory group under the supervision of Paul Skrzypczyk and Chung-Yun Hsieh.
+
+Other notable highlights alongside my academic pursuits have been working with the venture capital fund [The Creator Fund](https://thecreatorfund.com/) on assessing deep-tech start-ups, teaching a post-graduate course on the Applications of Quantum Information, co-organising [Careers in Quantum](https://www.careers-in-quantum.com/) – a student led quantum careers fair, and conducting outreach at both the Blue Dot Science Festival and the Swindon Science Festival. 
+
 
 ## Quantum Resources 
 
-This is a collection of notes I have made throughout my PhD on various relevant topics to my research. I have written things in the way that I have understood them. I thought I would share them in the hope that someone else might find them useful. 
+In addition to detailing my academic pursuits, this website contains a collection of notes I have made throughout my PhD on various topics relevant to my research. I have written things in the way that I have understood them. I thought I would share them in the hope that someone else might find them useful. 
 
 Note:
 - If you see 💭, hover to get some more information. 
@@ -19,21 +33,6 @@ Note:
 Please do get in touch with me if you would like to add anything, think something is missing that I should have covered, or notice a mistake. However, please note that this is an on going project and so some pages might only be partly finished. 
 
 **Contact:** ben.stratton@bristol.ac.uk
-
-## About Me
-
-My name is Ben Stratton and I am a fourth year PhD student at the University of Bristol studying problems in quantum information theory. My current interests are in and around the fields of quantum resource theories, quantum thermodynamics, and quantum computation.
-
-Originally from Devon, England, I studied for my MSci in physics at the University of Bristol between 2016-2020, taking units in Quantum Information Theory, Quantum Computation, Advance Quantum Mechanics and Advance Computational Physics. I returned to Bristol in 2021 to join the Quantum Engineering Centre for Doctoral Training. During the first year of my PhD I undertook an interdisciplinary range of teaching that included courses in Quantum Light and Matter, Applied Quantum Theory, Nanofabrication and Quantum Systems Engineering. I then joined the Quantum Information Theory group under the supervision of Paul Skrzypczyk and Chung-Yun Hsieh.
-
-Other notable highlights alongside my academic pursuits have been working with the venture capital fund [The Creator Fund](https://thecreatorfund.com/) on assessing deep-tech start-ups, teaching a post-graduate course on the Applications of Quantum Information, co-organising [Careers in Quantum](https://www.careers-in-quantum.com/) – a student led quantum careers fair, and conducting outreach at both the Blue Dot Science Festival and the Swindon Science Festival. 
-
-
-:::{figure} ./images/BenStrattonHeadShot.png
-:name: BenStratonHeadShot
-:width: 200px
-:align: center
-:::
 
 ## Publications
 
