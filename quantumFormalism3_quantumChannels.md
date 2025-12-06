@@ -187,7 +187,7 @@ The d-dimensional dephasing channel has Choi-state:
 \begin{equation}
  \mathcal{J}^{\textrm{ph}} = \alpha \vert \Phi_{00}^{+} \rangle \langle \Phi_{00}^{+} \vert + \frac{(1-\alpha)}{d-1} \sum_{c=1}^{d-1} \vert \Phi_{0c}^{+} \rangle \langle \Phi_{0c}^{+} \vert,
 \end{equation}
-where $\alpha=(p+1)/d$ and $\ket{\Phi_{ab}^+} = (\mathbb{I} \otimes W_{ab}) \ket{\Phi_{00}^+}$ and $W_{ab}$ are the [Heisenberg-Weyl operators](#Generating_Maximally_Entangled_Basis_target).
+where $\alpha=[p(d-1)+1]/d$ and $\ket{\Phi_{ab}^+} = (\mathbb{I} \otimes W_{ab}) \ket{\Phi_{00}^+}$ and $W_{ab}$ are the [Heisenberg-Weyl operators](#Generating_Maximally_Entangled_Basis_target).
 
 :::{dropdown} Proof
 Using the definition of the Choi-state, it can be seen that the Choi-state of a dephasing channel, $\mathcal{D}^{\rm ph}_{p}(\cdot)$, is given by
@@ -231,7 +231,7 @@ Inputting this into the above gives
         &= \frac{1}{d}  \sum_{n=m} \ket{nn}\bra{nn} + \frac{p}{d} \sum_{n \neq m}^{d-1}\ket{nn}\bra{mm},
     \end{split}
 \end{equation}
-if $\alpha=(p+1)/d$, the two equations are equivalent. 
+if $\alpha=[p(d-1)+1]/d$, the two equations are equivalent. 
 :::
 
 :::{tab-item} Depolarising Channel
