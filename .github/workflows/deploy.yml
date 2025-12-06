@@ -43,6 +43,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: './_build/html'
+      - name: Copy Google verification file
+        run: cp google0d6a20bb11099261.html _build/html/
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
