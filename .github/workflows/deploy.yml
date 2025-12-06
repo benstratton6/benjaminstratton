@@ -41,8 +41,8 @@ jobs:
         run: myst build --html
       - name: Copy Google verification file
         run: cp google0d6a20bb11099261.html _build/html/
-      - name: Copy sitemap.html _build/html/
-        run: cp  _build/html/  
+      - name: Copy sitemap file
+        run: cp sitemap.html _build/html/  
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
