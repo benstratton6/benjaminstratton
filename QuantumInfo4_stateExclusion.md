@@ -20,14 +20,23 @@ exports:
     article_type: Report
 ---
 (state_exclusion_page_target)=
-### State Exclusion Overview 
+The task of quantum state exclusion [](https://link.aps.org/doi/10.1103/PhysRevA.66.062111) [](https://doi.org/10.1038/nphys2309) [](http://dx.doi.org/10.1103/PhysRevA.89.022336) arises from a natural relaxation of the task of [quantum state discrimination](#quantum_state_discrimination_task) – particularly in scenarios where deterministic quantum state discrimination is impossible. In this task, a weaker aim is considered, with the player instead being asked to determine states from the set they _have_ _not_ been given by the referee.
 
-In a state exclusion task, a referee has a set of states $\{\rho_{x} \}^{N}, ~ x \in \{1, \ldots ,N\}$ and sends one state from the set, with probability $p_{x}$, to a player. The player then performs a general $N$ outcome measurement on the state, as described by a positive operator-valued measure (POVM) $\{T_{g}\}_{g=1}^{N}$, where $T_g\ge0$ $\forall\,g$ and $\sum_gT_g=\mathbb{I}$. From this measurement, the player outputs a label $g \in \{1, \ldots , N\}$. The player wins the task if $g \neq x$ and fail if $g=x$. Namely, they win if they successfully exclude the state by outputting a label that was not associated to the sent state; the player fails if they output the label associated to the sent state (https://link.aps.org/doi/10.1103/PhysRevA.66.062111, https://doi.org/10.1038/nphys2309, http://dx.doi.org/10.1103/PhysRevA.89.022336). 
+## State Exclusion Overview 
+
+```{card} 
+:header: **Task of Quantum State Exclusion**
+Let $(p_x, \rho_x)_x$ be an ensemble, such that one gets the state $\rho_x$ with probability $p_x$. Assume this ensemble is known to both a referee and a player. The referee then takes a state $\rho_y$ from the ensemble with probability $p_y$ and gives it to the player. The players makes a measurement on the state and outputs a set of indices $\mathbb{G}$ of length $k$, where $k \leq \vert (p_x, \rho_x)_x \vert - 1$. 
+
+If $y \notin \mathbb{G}$ the player succeeds at the task, if $y \in \mathbb{G}$ the player fails at the task. 
+Card content
+```
+In the task of quantum state exclusion, the player therefore aims to identify $k$-states that they have _not_ been given to them by the referee. 
 
 ### 1-State Exclusion
-If the player outputs a single label $g$ such that $g \neq x$ with certainty, this is conclusive $1$-state exclusion. This occurs if the player is able to find a POVM such that  
+If the player outputs a single label $g$ such that $g \neq x$ with certainty, this is conclusive $1$-state exclusion. This occurs if the player is able to find a [POVM](#POVM_measurement_definition_target) such that  
 \begin{equation}
-    \textrm{tr} \big[ T_{x}\rho_{x}] = 0 ~ ~ \forall ~~ x  \in \{1, \ldots ,N\}. \label{stateExclusionEquation}
+    \textrm{tr} \big[ T_{g}\rho_{g}] = 0 ~ ~ \forall ~~ g  \in \{1, \ldots ,N\}. \label{stateExclusionEquation}
 \end{equation}
 If the player gets the measurement outcome associated to $T_{g}$, they output $g$ knowing with certainty the referee could not have sent $\rho_{g}$.
 
@@ -68,10 +77,22 @@ Using the dual $1$-state exclusion task, $k$-state exclusion can also now be for
 
 where $P^{k}_{err} > 0$ if no POVM to conclusively perform $k$-state exclusion exists. 
 
+### Conclusive State Discrimination as $(N-1)$-State Exclusion
+
+For an ensemble with $N$ states, performing conclusive $(N-1)$-state exclusion is equivalent to performing deterministic quantum state discrimination: knowing for certain $N-1$ states that you _do_ _not_ have is equivalent to knowing which state you _do_ have. Put alternatively, 
+\begin{equation}
+P^{N-1}_{\mathrm{err}} = 0 \iff P_{\mathrm{suc}} = 1,
+\end{equation}
+where $P_{\mathrm{suc}}$ is [maximum success probability](#state_discrimination_min_error_equation) in performing quantum state discrimination. 
+
+As it is known that $P_{\mathrm{suc}} = 1$ [if and only if](#state_discrimination_deterministic) all states in the ensemble are orthogonal. Hence, $P^{N-1}_{\mathrm{err}} = 0$ if and only if all states in the ensemble are orthogonal. 
+
+Conclusive state discrimination can therefore be considered to be a special case of conclusive $k$-state exclusion. How the two tasks are related in the non-conclusive case, and for $k< N-1$, remains an active area of research.
+
 ### Sub-Channel Exclusion
 
-A closely related task to state exclusion is sub-channel exclusion. Consider a collection of completely-positive trace non-increasing linear maps, $\Psi = \{\Psi_{x}\}_{x=1}^N$, such that $\sum_{x=1}^N \Psi_{x}$ is a channel. This collection is called a [quantum instrument](https://en.wikipedia.org/wiki/Quantum_instrument), and each map $\Psi_{x}$ is called a sub-channel.
+A closely related task to state exclusion is sub-channel exclusion. A special case of sub-channel exclusion concerns a collection of completely-positive trace non-increasing linear maps, $\Psi = \{\Psi_{x}\}_{x=1}^N$, such that $\sum_{x=1}^N \Psi_{x}$ is a channel. This collection is a [quantum instrument](https://en.wikipedia.org/wiki/Quantum_instrument), with each map $\Psi_{x}$ called a sub-channel.
 
-In sub-channel exclusion, a player has a reference state $\rho$ that they send to the referee. The referee then measures $ \rho $ using the instrument and returns the
+In this task, a player has a reference state $\rho$ that they send to the referee. The referee then measures $ \rho $ using the instrument and returns the
 post-measurement state to the player. The player measures a POVM on the state and outputs a label $g \in \{1, \ldots ,N\}$. They succeed if they output a label of a sub-channel that was not applied. As before, the player can output the label of a sub-channel not applied with certainty, they can output $k$ labels, $\{ g_{i} \}^{k}_{i=1}$, or they can output $k$ labels with certainty.
 

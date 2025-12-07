@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Benjamin Stratton
 # authors:
 #     affiliations:
 #       - Quantum Engineering Centre for Doctoral Training, H. H. Wills Physics Laboratory and
@@ -8,6 +8,7 @@ title: Home
 # license: CC-BY-4.0
 keywords: Quantum Information, Quantum Mechanics
 ---
+
 ## About Me
 
 My name is Ben Stratton and I am a fourth year PhD student at the University of Bristol studying problems in quantum information theory. My current interests are in and around the fields of quantum resource theories, quantum thermodynamics, and quantum computation.

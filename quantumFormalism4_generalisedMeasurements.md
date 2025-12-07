@@ -91,7 +91,7 @@ In the literature, this is referred to as a [quantum instrument](https://en.wiki
 \end{equation}
 
 ## POVMs
-
+(POVM_measurement_definition_target)=
 A Positive Operator Valued Measure (POVM) is a generalised measurement where one does not care about the post measurement state, only the probability of getting different outcomes. This might be the case because the post measurement states is unimportant for any future use, or, it might be because it physically does not exists, such as when a photon is measured. In this case, the photon is destroyed, leaving no photon for a post measurement state to exist in. 
 
 Hence, rather than considering the set of operators $\{ M_{x} \}_{x=0}^{m-1}$, one can instead consider only the set $\{ T_x = M_x^\dagger M_{x} \}_{x=0}^{m-1}$ which is enough to give the probabilities of the different possible outcomes occurring. However, one loses the ability to calculate the post measurement state.
