@@ -26,7 +26,7 @@ The task of quantum state exclusion [](https://link.aps.org/doi/10.1103/PhysRevA
 
 ```{card} 
 :header: **Task of Quantum State Exclusion**
-Let $(p_x, \rho_x)_x$ be an ensemble, such that one gets the state $\rho_x$ with probability $p_x$. Assume this ensemble is known to both a referee and a player. The referee then takes a state $\rho_y$ from the ensemble with probability $p_y$ and gives it to the player. The players makes a measurement on the state and outputs a set of indices $\mathbb{G}$ of length $k$, where $k \leq \vert (p_x, \rho_x)_x \vert - 1$. 
+Let $(p_x, \rho_x)_x$ be an ensemble, such that one gets the state $\rho_x$ with probability $p_x$. Assume this ensemble is known to both a referee and a player. The referee then takes a state $\rho_y$ from the ensemble, with probability $p_y$, and gives it to the player. The players makes a measurement on the state and outputs a set of indices $\mathbb{G}$ of length $k$, where $k \leq \vert (p_x, \rho_x)_x \vert - 1$. 
 
 If $y \notin \mathbb{G}$ the player succeeds at the task, if $y \in \mathbb{G}$ the player fails at the task. 
 Card content

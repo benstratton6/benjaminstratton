@@ -27,9 +27,9 @@ In classical physics, any two distinct states of a physical system are distingui
 ```{card} 
 :header: **Task of Quantum State Discrimination**
 
-Let $(p_x, \rho_x)_x$ be an ensemble, such that one gets the state $\rho_x$ with probability $p_x$. Assume this ensemble is known to both to a referee and a player. The referee then takes a state $\rho_y$ from the ensemble and gives it to the player. The players makes a measurement on the state and outputs an index $g$. 
+Let $(p_x, \rho_x)_x$ be an ensemble, such that one gets the state $\rho_x$ with probability $p_x$. Assume this ensemble is known to both to a referee and a player. The referee then takes a state $\rho_y$ from the ensemble, with probability $p_y$, and gives it to the player. The players makes a measurement on the state and outputs an index $g$. 
 
-If $g=x$ the player succeeds at the task, if $g \neq x$ the player fails at the task. 
+If $g=y$ the player succeeds at the task, if $g \neq y$ the player fails at the task. 
 ```
 
 The task of quantum state discrimination therefore asks the player to correctly identify which state from the ensemble they have been given by the referee. To succeed in this task, one should typically consider performing a measurement with $N \geq \vert (p_x, \rho_x)_x \vert$ different possible outcomes, where $\vert (p_x, \rho_x)_x \vert$ is the number of different states in the ensemble. Hence, each state in the ensemble is assigned a different measurement outcome. 
