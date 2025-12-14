@@ -35,3 +35,6 @@ exports:
 (orthogonal_complement_quantum_info_glossary)=
 **Orthogonal Complement:** The orthogonal complement of a vector space $V$ is the set of vectors orthogonal to all vectors in $V$. 
 
+(rotation_matrix_quantum_info_glossary)=
+**Rotation Matrix:** A matrix $O$ is a rotation matrix if its is orthogonal, $OO^t=O^tO=\mathbb{I}$, real, and has determinant 1, $\mathrm{Det}(O)=1$. 
+

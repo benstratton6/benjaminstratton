@@ -218,6 +218,97 @@ There are multiple different operator basis one could choose and hence no unique
 
 Unitary operators cause rotations of points on the Bloch sphere. 
 
+Specifically, given a unitary $U$, then 
+\begin{equation}
+U \rho U^\dagger = \frac{1}{2} (\mathbb{I} + ( O \bm{n}) \cdot \bm{\sigma}),
+\end{equation}
+where $O$ is a [rotation matrix](#rotation_matrix_quantum_info_glossary). 
+
+:::{dropdown} Proof
+
+Let $\bm{\sigma}=[\sigma_1=X, \sigma_2=Y, \sigma_3=Z]^t$ be a vector of Pauli operators. Then 
+\begin{equation}
+    \begin{split}
+        U \big( \bm{n} \cdot \bm{\sigma} \big) U^\dagger &= \sum_{j=1}^3 n_j U \sigma_j U^\dagger \\
+        &= \sum_{j=1}^3 n_j \sum_{i=1}^3 \alpha_{ij} \sigma_i \\
+        &= \sum_{i,j=1}^3 \alpha_{ij} n_j \sigma_i \\
+        &= (O \bm{n}) \cdot \bm{\sigma} ~ ~ ~ \textrm{where} ~ ~ ~ O = \sum_{i,j=1}^3 \alpha_{ij} \vert i \rangle \langle j \vert.
+    \end{split}
+\end{equation}
+In the above, $n_i$ are the components of $\bm{n}$, and in the second line we have used the fact that the Pauli operators form an operator basis. Note, as $\textrm{tr}\big[ U \sigma_i U^\dagger\big] = 0~\forall~i$ the coefficient for $\mathbb{I}$ is zero. 
+
+To complete the proof we must now show that $O$ is a rotation matrix. For this to hold it must be the case that $O^tO=OO^t=\mathbb{I}$, all entries must be real, and the determinant must be 1. We will prove each of these in turn. Firstly, consider 
+\begin{equation}
+    \begin{split}
+        \textrm{tr}\big[ (U \sigma_i U^\dagger)(U \sigma_j U^\dagger) \big] &= \textrm{tr}\big[ \sigma_i \sigma_j \big] \\
+        &= \delta_{ij}. \label{eq:delta}
+    \end{split}
+\end{equation}
+Alternatively,
+\begin{equation}
+    \begin{split}
+        \textrm{tr}\big[ (U \sigma_i U^\dagger)(U \sigma_j U^\dagger) \big] &= \textrm{tr}\bigg[ \sum_{k=1}^3 \alpha_{ki} \sigma_k \sum_{l=1}^3 \alpha_{lj} \sigma_l \bigg] \\
+        &= \sum_{k,l=1}^3 \alpha_{ki} \alpha_{lj} \textrm{tr}\big[ \sigma_k \sigma_l \big] \\
+        &= \sum_{k=1}^3 \alpha_{ki} \alpha_{kj} \\
+        &= \delta_{ij}
+    \end{split}
+\end{equation}
+where in the final line we have used [](#eq:delta). From this it can be seen that  
+\begin{equation}
+    \begin{split}
+        O^tO &= \bigg( \sum_{i,j=1}^3 \alpha_{ji} \vert i \rangle \langle j \vert \bigg) \bigg( \sum_{k,l=1}^3 \alpha_{kl} \vert k \rangle \langle l \vert \bigg) \\
+        &= \sum_{i,l=1}^3 \bigg( \sum_{j=3}^3 \alpha_{ji} \alpha_{jl} \bigg) \vert i \rangle \langle l \vert \\
+        &= \sum_{i,l=1}^3 \delta_{il} \vert i \rangle \langle l \vert \\
+        &= \mathbb{I}.
+    \end{split}
+\end{equation}
+Now, it can be seen that 
+\begin{equation}
+\begin{split}
+    \alpha_{ij}^* &= \textrm{tr}\big[ \sigma_i U \sigma_j U^\dagger \big]^* \\
+    &= \textrm{tr}\big[ \big(\sigma_i U \sigma_j U^\dagger\big)^\dagger \big] \\
+    &= \alpha_{ij},
+\end{split}
+\end{equation}
+where we have used the cyclic properties of the trace. Hence, each component of the matrix is real. Lastly, to prove that $O$ is a rotation matrix and not just an orthogonal matrix, it needs to be show that the determinate is one. In general, it holds that the determinate of a three dimensional square matrix is given by 
+\begin{equation}
+\textrm{Det}(O) \epsilon_{ijk} = \sum_{l,m,n=1}^3 \alpha_{li} \alpha_{mj} \alpha_{nk} \epsilon_{lmn}, \label{eq:determinateEquation}
+\end{equation}
+where
+\begin{equation}
+\epsilon_{ijk} = \begin{cases}
+    1 \quad &\textrm{if}~(i,j,k)~\textrm{is an even permutation of}~(1,2,3) \\
+    -1 \quad &\textrm{if}~(i,j,k)~\textrm{is an odd permutation of}~(1,2,3)\\
+    0 \quad &\textrm{if}~i=j, ~ ~ j=k, ~ ~ k=i,
+\end{cases}
+\end{equation}
+is the [Levi-Civita symbol](#https://en.wikipedia.org/wiki/Levi-Civita_symbol). By noting that 
+\begin{equation}
+\sigma_{i} \sigma_j = \delta_{ij}\mathbb{I} + i \epsilon_{ijk} \sigma_k
+\end{equation}
+it can be seen that 
+\begin{equation}
+\begin{split}
+    \textrm{tr}\big[ U \sigma_i U^\dagger U \sigma_j U^\dagger U \sigma_k U^\dagger \big] &= \textrm{tr}\big[ \sigma_i \sigma_j \sigma_k \big] \\
+        & = 2 \underline{i} \epsilon_{ijk},
+\end{split}
+\end{equation}
+where again the cyclic nature of the trace has been used and $\underline{i}=\sqrt{-1}$. Alternatively, 
+\begin{equation}
+\begin{split}
+    \textrm{tr}\big[ & U \sigma_i U^\dagger U \sigma_j U^\dagger U \sigma_k U\dagger \big] \\
+    &= \textrm{tr} \biggl[ \bigg( \sum_{l=1}^3 \alpha_{li} \sigma_{l} \bigg)  \bigg( \sum_{m=1}^3 \alpha_{mj} \sigma_m \bigg)    \bigg( \sum_{n=1}^3 \alpha_{nk} \sigma_n \bigg)   \biggl] \\
+    &= \sum_{l,m,n=1}^3 \alpha_{li} \alpha_{mj} \alpha_{nk} \textrm{tr}\big[ \sigma_l \sigma_m \sigma_n \big] \\
+    &= 2 \underline{i} \sum_{l,m,n=1}^3 \alpha_{li} \alpha_{mj} \alpha_{nk} \epsilon_{lmn}.
+\end{split}
+\end{equation}
+Hence, 
+\begin{equation}
+\epsilon_{ijk} =  \sum_{l,m,n=1}^3 \alpha_{li} \alpha_{mj} \alpha_{nk}\epsilon_{lmn}, 
+\end{equation}
+which, from [](#eq:determinateEquation) means that $\mathrm{Det}(O)=1$, completing the proof. 
+:::
+
 The Pauli operators, $\{ X, Y, Z \}$, give rise to rotations around the $x, y$, and $z$ axis respectively when exponentiated, 
 \begin{align*}
 R_x(\Theta) &= e^{-i \Theta X/2} = \cos \bigg(\frac{\Theta}{2} \bigg)\mathbb{I} - i \sin \bigg( \frac{\Theta}{2} \bigg) X , \\
