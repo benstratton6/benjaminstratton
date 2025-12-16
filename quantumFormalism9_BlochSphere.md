@@ -270,7 +270,7 @@ Now, it can be seen that
     &= \alpha_{ij},
 \end{split}
 \end{equation}
-where we have used the cyclic properties of the trace. Hence, each component of the matrix is real. Lastly, to prove that $O$ is a rotation matrix and not just an orthogonal matrix, it needs to be show that the determinate is one. In general, it holds that the determinate of a three dimensional square matrix is given by 
+where we have used the cyclic properties of the trace. Hence, each component of the matrix is real. Lastly, to prove that $O$ is a rotation matrix and not just an orthogonal matrix, it needs to be show that the determinant is one. In general, it holds that the determinant of a three dimensional square matrix is given by 
 \begin{equation}
 \textrm{Det}(O) \epsilon_{ijk} = \sum_{l,m,n=1}^3 \alpha_{li} \alpha_{mj} \alpha_{nk} \epsilon_{lmn}, \label{eq:determinateEquation}
 \end{equation}
@@ -296,7 +296,7 @@ it can be seen that
 where again the cyclic nature of the trace has been used and $\underline{i}=\sqrt{-1}$. Alternatively, 
 \begin{equation}
 \begin{split}
-    \textrm{tr}\big[ & U \sigma_i U^\dagger U \sigma_j U^\dagger U \sigma_k U\dagger \big] \\
+    \textrm{tr}\big[ & U \sigma_i U^\dagger U \sigma_j U^\dagger U \sigma_k U^\dagger \big] \\
     &= \textrm{tr} \biggl[ \bigg( \sum_{l=1}^3 \alpha_{li} \sigma_{l} \bigg)  \bigg( \sum_{m=1}^3 \alpha_{mj} \sigma_m \bigg)    \bigg( \sum_{n=1}^3 \alpha_{nk} \sigma_n \bigg)   \biggl] \\
     &= \sum_{l,m,n=1}^3 \alpha_{li} \alpha_{mj} \alpha_{nk} \textrm{tr}\big[ \sigma_l \sigma_m \sigma_n \big] \\
     &= 2 \underline{i} \sum_{l,m,n=1}^3 \alpha_{li} \alpha_{mj} \alpha_{nk} \epsilon_{lmn}.
@@ -306,7 +306,7 @@ Hence,
 \begin{equation}
 \epsilon_{ijk} =  \sum_{l,m,n=1}^3 \alpha_{li} \alpha_{mj} \alpha_{nk}\epsilon_{lmn}, 
 \end{equation}
-which, from [](#eq:determinateEquation) means that $\mathrm{Det}(O)=1$, completing the proof. 
+which, from [](#eq:determinateEquation), means that $\mathrm{Det}(O)=1$, completing the proof. 
 :::
 
 The Pauli operators, $\{ X, Y, Z \}$, give rise to rotations around the $x, y$, and $z$ axis respectively when exponentiated, 
