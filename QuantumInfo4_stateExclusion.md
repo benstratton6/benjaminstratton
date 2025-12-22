@@ -128,7 +128,7 @@ The additional condition in strong state exclusion ensures that all outcomes of 
 
 Weak conclusive $1$-state exclusion on $\{ \rho_{x} \}^{N}_{x=1}$ is defined to be the existence of a POVM with $L$ non-zero elements, where $L\leq N$, such that each conclusively exclude a different state from a subset of $\{ \rho_{x} \}^{N}_{x=1}$ of size $L$. Seen [](quantumStateExclusion) for an example. 
 
-When extended to $k$-state exclusion, strong exclusion means that there exists a POVM that can exclude all possible sub-sets of $\{ \rho_{x} \}^{N}_{x=1}$ of length $k$. Weak exclusion then means that there exists a POVM that can only exclude {\em some subsets} of $\{ \rho_{x} \}^{N}_{x=1}$ of length $k$. Note, this is equivalent to considering strong and weak exclusion on the equivalent $1$-state exclusion task. 
+When extended to $k$-state exclusion, strong exclusion means that there exists a POVM that can exclude all possible sub-sets of $\{ \rho_{x} \}^{N}_{x=1}$ of length $k$. Weak exclusion then means that there exists a POVM that can only exclude _some subsets_ of $\{ \rho_{x} \}^{N}_{x=1}$ of length $k$. Note, this is equivalent to considering strong and weak exclusion on the equivalent $1$-state exclusion task. 
 
 ```{figure} quantum_information_state_exclusion_image
 :label: quantumStateExclusion
