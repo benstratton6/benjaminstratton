@@ -98,6 +98,8 @@ post-measurement state to the player. The player measures a POVM on the state an
 
 ## Weak and Strong Exclusion
 
+Here we introduce the notion of weak and strong state exclusion, defined in [](https://doi.org/10.48550/arXiv.2406.08360).
+
 ```{card} 
 :header: **Strong State Exclusion**
 
