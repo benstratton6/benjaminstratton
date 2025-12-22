@@ -101,6 +101,16 @@ post-measurement state to the player. The player measures a POVM on the state an
 Here we introduce the notion of weak and strong state exclusion, defined in [](https://doi.org/10.48550/arXiv.2406.08360).
 
 ```{card} 
+:header: **Weak State Exclusion**
+
+Given a set of states $\{ \rho_{x} \}^{N}_{x=1}$, weak conclusive $1$-state exclusion is possible if there exists a POVM $T=\{T_{a}\}_{a=1}^{N}$ such that 
+\begin{equation}
+        \textnormal{tr} \big[ T_{x} \rho_{x} \big] = 0 \quad\forall~x\in\{1, \ldots, N\}.
+\end{equation}
+
+```
+
+```{card} 
 :header: **Strong State Exclusion**
 
 Given a set of states $\{ \rho_{x} \}^{N}_{x=1}$, strong conclusive $1$-state exclusion is possible if there exists a POVM $T=\{T_{a}\}_{a=1}^{N}$ such that 
@@ -110,16 +120,6 @@ Given a set of states $\{ \rho_{x} \}^{N}_{x=1}$, strong conclusive $1$-state ex
 **and**
 \begin{equation}   
  \sum_{x=1}^{N} \textnormal{tr} \big[ T_{a} \rho_{x} ] \neq 0\quad\forall~a\in\{1,\ldots,N\}
-\end{equation}
-
-```
-
-```{card} 
-:header: **Weak State Exclusion**
-
-Given a set of states $\{ \rho_{x} \}^{N}_{x=1}$, weak conclusive $1$-state exclusion is possible if there exists a POVM $T=\{T_{a}\}_{a=1}^{N}$ such that 
-\begin{equation}
-        \textnormal{tr} \big[ T_{x} \rho_{x} \big] = 0 \quad\forall~x\in\{1, \ldots, N\}.
 \end{equation}
 
 ```
