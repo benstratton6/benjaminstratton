@@ -97,3 +97,57 @@ In this task, a player has a reference state $\rho$ that they send to the refere
 post-measurement state to the player. The player measures a POVM on the state and outputs a label $g \in \{1, \ldots ,N\}$. They succeed if they output a label of a sub-channel that was not applied. As before, the player can output the label of a sub-channel not applied with certainty, they can output $k$ labels, $\{ g_{i} \}^{k}_{i=1}$, or they can output $k$ labels with certainty.
 
 ## Weak and Strong 
+
+```{card} 
+:header: **Strong State Exclusion**
+
+Given a set of states $\{ \rho_{x} \}^{N}_{x=1}$, strong conclusive $1$-state exclusion is possible if there exists a POVM $T=\{T_{a}\}_{a=1}^{N}$ such that 
+\begin{equation}
+        \textnormal{tr} \big[ T_{x} \rho_{x} \big] = 0 \quad\forall~x\in\{1, \ldots, N\} \hspace{0.2cm} .
+\end{equation}
+**and**
+\begin{equation}   
+ \sum_{x=1}^{N} \textnormal{tr} \big[ T_{a} \rho_{x} ] \neq 0\quad\forall~a\in\{1,\ldots,N\}
+\end{equation}
+
+```
+
+```{card} 
+:header: **Weak State Exclusion**
+
+Given a set of states $\{ \rho_{x} \}^{N}_{x=1}$, weak conclusive $1$-state exclusion is possible if there exists a POVM $T=\{T_{a}\}_{a=1}^{N}$ such that 
+\begin{equation}
+        \textnormal{tr} \big[ T_{x} \rho_{x} \big] = 0 \quad\forall~x\in\{1, \ldots, N\}.
+\end{equation}
+
+```
+
+The additional condition in strong state exclusion ensures that all outcomes of the POVM $\{T_{a}\}_{a=1}^{N}$ have some probability of occurring. Strong conclusive $1$-state exclusion on the set $\{ \rho_{x} \}^{N}_{x=1}$ is defined to be the existence of an $N$ element POVM where each element excludes a different state from $\{ \rho_{x} \}^{N}_{x=1}$ with certainty. 
+
+Weak conclusive $1$-state exclusion on $\{ \rho_{x} \}^{N}_{x=1}$ is defined to be the existence of a POVM with $L$ non-zero elements, where $L\leq N$, such that each conclusively exclude a different state from a subset of $\{ \rho_{x} \}^{N}_{x=1}$ of size $L$. Seen [](quantumStateExclusion) for an example. 
+
+When extended to $k$-state exclusion, strong exclusion means that there exists a POVM that can exclude all possible sub-sets of $\{ \rho_{x} \}^{N}_{x=1}$ of length $k$. Weak exclusion then means that there exists a POVM that can only exclude {\em some subsets} of $\{ \rho_{x} \}^{N}_{x=1}$ of length $k$. 
+
+```{figure} quantum_information_state_exclusion_image
+:label: quantumStateExclusion
+:alt: Sunset at the beach
+:align: center
+
+A figure showing the difference between strong state exclusion and weak state exclusion. 
+```
+
+
+
+
+It is clearly the case from the above definitions that weak state exclusion is a requisite for strong state exclusion --- justifying their respective names. Moreover, if one is able to perform strong state exclusion, they can trivially convert this into weak state exclusion via classical post-processing of the measurement outcomes. It can also be seen that if any of the states in $\{ \rho_{x} \}^{N}_{x=1}$ are full-rank, then strong state exclusion is never possible. This is due to $\textrm{tr}[T_{g}\rho_{x}] = 0$ if and only if $T_{g} = 0$ when $\rho_{x}$ is full-rank.
+% The above definition of strong conclusive $1$-state exclusion on $N$ states means it is defined as the existence of an $N$ element POVM where each element excludes a different state from $\{ \rho_{x} \}^{N}_{x=1}$ with certainty. It can be the case that some POVM elements exclude multiple states, but each element must exclude at least one different state. The above definition of weak conclusive $1$-state exclusion given above is then defined to be the existence of a POVM with $L$ non-zero elements (where $L\leq N$) that each conclusively exclude a different state from a subset of $\{ \rho_{x} \}^{N}_{x=1}$ of size $L$. Using this terminology, one could define the ability to perform weak state exclusion on $\{ \rho_{x} \}^{N}_{x=1}$ as the ability to perform strong state exclusion on some subset of $\{ \rho_{x} \}^{N}_{x=1}$. 
+% When considering $k$-state exclusion, strong state exclusion means there exists a POVM that can exclude all possible subsets of $\{ \rho_{x} \}^{N}_{x=1}$ of length $k$, with one subset being excluded with certainty with each measurement. Weak $k$-state exclusion then means that, whilst one subset is still excluded with each measurement, not all subsets of $\{ \rho_{x} \}^{N}_{x=1}$ of length $k$ are excluded. Note, this is equivalent to considering strong and weak exclusion on the equivalent $1$-state exclusion task. 
+
+Previously, our proposed definition of weak state exclusion has been used as the general definition of state exclusion~\cite{mishra2023optimal}. However, this definition has attracted (indirect) criticism for trivialising the problem of state exclusion~\cite{Heinosaari_2018}, as if a player can perform conclusive $1$-state exclusion on any two states $\{\rho_1, \rho_2\}\subseteq\{ \rho_{x} \}^{N}_{x=1}$ using the two-element POVM $\{M_{1}, M_{2}\}$, then by definition $1$-state exclusion could trivially be performed on the whole set $\{ \rho_{x} \}^{N}_{x=1}$ by considering the $N$ element POVM
+\begin{equation}
+    \{T_{1} = M_{1}, T_{2} = M_{2}, T_{3} = 0, ~\ldots~, T_{N} = 0\}.
+\end{equation}
+Each measurement outcome would exclude one state, but some states would never be excluded. Whilst such an example is indeed trivial, there exist plenty of intermediate scenarios between this and strong state exclusion that could prove useful in operationally motivated tasks. 
+
+
+For example, consider a task where player A is trying to communicate to player B which of $N$ wires can be cut to diffuse a bomb~\cite{PhysRevLett.125.110401}. Player A can aim to send exclusionary information to player B that says ``do not cut wire $\alpha$ or wire $\beta$." They do this by encoding exclusionary information into some quantum state and sending it to player B. Player B then measures a POVM that performs conclusive $2$-state exclusion, allowing them to say with certainty that they do not have states associated to the label $\alpha$ or $\beta$ and hence those are the wires not to cut. To succeed, player B must output a list of wires not to cut; he does not need to be able to exclude all possible subsets of wires of length $2$. Hence, weak $k$-state exclusion would still prove useful in the task of preventing accidental detonation during defusal. 
