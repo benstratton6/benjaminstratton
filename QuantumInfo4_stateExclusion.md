@@ -77,7 +77,7 @@ Using the dual $1$-state exclusion task, $k$-state exclusion can also now be for
 
 where $P^{k}_{err} > 0$ if no POVM to conclusively perform $k$-state exclusion exists. 
 
-### Conclusive State Discrimination as $(N-1)$-State Exclusion
+### $(N-1)$-State Exclusion
 
 For an ensemble with $N$ states, performing conclusive $(N-1)$-state exclusion is equivalent to performing deterministic quantum state discrimination: knowing for certain $N-1$ states that you _do_ _not_ have is equivalent to knowing which state you _do_ have. Put alternatively, 
 \begin{equation}
@@ -89,10 +89,11 @@ As it is known that $P_{\mathrm{suc}} = 1$ [if and only if](#state_discriminatio
 
 Conclusive state discrimination can therefore be considered to be a special case of conclusive $k$-state exclusion. How the two tasks are related in the non-conclusive case, and for $k< N-1$, remains an active area of research.
 
-### Sub-Channel Exclusion
+## Sub-Channel Exclusion
 
 A closely related task to state exclusion is sub-channel exclusion. A special case of sub-channel exclusion concerns a collection of completely-positive trace non-increasing linear maps, $\Psi = \{\Psi_{x}\}_{x=1}^N$, such that $\sum_{x=1}^N \Psi_{x}$ is a channel. This collection is a [quantum instrument](https://en.wikipedia.org/wiki/Quantum_instrument), with each map $\Psi_{x}$ called a sub-channel.
 
 In this task, a player has a reference state $\rho$ that they send to the referee. The referee then measures $ \rho $ using the instrument and returns the
 post-measurement state to the player. The player measures a POVM on the state and outputs a label $g \in \{1, \ldots ,N\}$. They succeed if they output a label of a sub-channel that was not applied. As before, the player can output the label of a sub-channel not applied with certainty, they can output $k$ labels, $\{ g_{i} \}^{k}_{i=1}$, or they can output $k$ labels with certainty.
 
+## Weak and Strong 
