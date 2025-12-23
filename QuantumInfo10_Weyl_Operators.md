@@ -30,7 +30,7 @@ The discrete Weyl operators are defined as
 \end{equation}
 where 
 \begin{equation}
-    X = \sum_{j=0}^{d-1} \vert j+1  ~ \textrm{mod} ~d \rangle \langle j \vert, ~ ~ Z= \sum_{j=0}^{d-1} \Omega^j \vert j \rangle \langle \vert, ~ ~ \Omega = e^{\frac{2 \pi i}{d}},
+    X = \sum_{j=0}^{d-1} \vert j+1  ~ \textrm{mod} ~d \rangle \langle j \vert, ~ ~ Z= \sum_{j=0}^{d-1} \Omega^j \vert j \rangle \langle j \vert, ~ ~ \Omega = e^{\frac{2 \pi i}{d}},
 \end{equation}
 such that the $(a,b)$th discrete Weyl operator is 
 \begin{equation}
