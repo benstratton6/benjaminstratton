@@ -67,6 +67,7 @@ parts:
       - file: ResourceTheories2_criteria.md
       - file: ResourceTheories3_quantifyingResources.md
       - file: ResourceTheories4_coherence
+      - file: ResourceTheories5_resource_preservability_theories
       - file: ResourceTheoriesGlossaryofTerms.md
   - caption: Error Correction
     chapters: 
