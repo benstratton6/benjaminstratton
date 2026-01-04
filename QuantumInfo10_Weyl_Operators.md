@@ -45,7 +45,7 @@ where $\sigma_x, \sigma_y, \sigma_z$ are the qubit $X, Y$ and $Z$ Pauli-operator
 ### Identities 
 
 Here we list some identities for the Weyl operators.  
-
+(discrete_Weyl_operators_ajoint_trans_muli_card_target)=
 ```{card} 
 :header: **Transposition, Adjoint, and Multiplication**
 :footer: 

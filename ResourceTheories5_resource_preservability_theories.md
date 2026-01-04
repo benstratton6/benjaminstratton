@@ -152,5 +152,4 @@ where $\mathcal{E}_\kappa, \mathcal{P}_\kappa \in \mathfrak{O}^\mathrm{st} ~\for
 
 ```
 :::
-
 ::::

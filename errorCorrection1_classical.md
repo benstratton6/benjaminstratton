@@ -20,7 +20,7 @@ exports:
     article_type: Report
 ---
 
-All information is encoded in physical systems. These physical systems are subject to noise - unwanted interactions with the environment - that can corrupt this encoded information. The goal of error correction is to combat this noise and hence ensure that the any encoded information is correctly decoded. 
+All information is encoded in physical systems. These physical systems are subject to noise - unwanted interactions with the environment - that can corrupt this encoded information. The goal of error correction is to combat this noise and hence ensure that the encoded information is correctly decoded. 
 
 The following resources were used in the process of writing this collection of notes on error correction: 
 - [Stabilizer Codes and Quantum Error Correction](
@@ -50,7 +50,7 @@ After the information has been sent or stored in memory for some time, it needs 
 
 ## Classical Error Correction
 
-Error correction aims to combat noise through redundancy - each logical bit is instead encoded in many physical bits. A method of encoding logical information through redundancy in order to protect against errors is known as an **error correcting code**. 
+Error correction aims to combat noise through redundancy — each logical bit is instead encoded in many physical bits. A method of encoding logical information through redundancy in order to protect against errors is known as an **error correcting code**. 
 
 <!-- Whilst physical error rates are low when storing classical information, it is still necessary to employ error correction in scenarios such as deep space communication where the large distance between the sender and receiver leads to more physical errors occurring.  -->
 
@@ -62,11 +62,11 @@ When an error occurs on the physical bits an error correcting code aims to:
 2. if so, identify where the error has occurred (to which bits), 
 3. correct the error. 
 
-Typically, steps (1) and (2) occur at the same time. A measurement in made on the physical bits with the ouput of the measurement (known as a **syndrome**) detailing both that an error has occurred and where that error has occurred. In some codes, step (2) may not be necessary to fulfil step (3), with the error being correctable without its location (on which bit is has occurred) being known (or, perhaps, without its exact location being known). 
+Typically, steps (1) and (2) occur at the same time. A measurement in made on the physical bits with the ouput of the measurement (known as a **syndrome**) detailing both that an error has occurred and where that error has occurred. In some codes, step (2) may not be necessary to fulfil step (3), with the error being correctable without its exact location (on exactly which bit is has occurred) being known.
 
-On the other hand, some codes are able fulfill (1) without being able to fulfill (2) or (3). Such codes are said to perform **error detection**. In these cases, it is known that an error has occurred, but it is not know how to correct it. 
+On the other hand, some codes are able to fulfill (1) without being able to fulfill (2) or (3). Such codes are said to perform **error detection**. In these cases, it is known that an error has occurred, but it is not know how to correct it. 
 
-With only the use of error detection, one can ensure the correct performance of some information processing protocol in the presence of noise by just repeat the protocol until it happens error free, discarding any cases where an error is detected and starting again. 
+With only the use of error detection, one can ensure the correct performance of some information processing protocol in the presence of noise by just repeat the protocol until it happens error free, discarding any cases where an error is detected and starting again. Although, depending on the probability of an error occurring, this might be very inefficient. 
 
 ### The Repetition Code
 
@@ -87,13 +87,15 @@ The 3 bit repetition code fails if a bit-flip (X) error occurs on more then one 
 \begin{equation}
 \ket{0}_L = \ket{000} \xrightarrow{\rm Noisy~ Channel} (X \otimes X \otimes \mathbb{I}) \ket{000} = \ket{110}.
 \end{equation}
-A majority vote will count one $\ket{0}$ and two $\ket{1}$'s, leading to $\ket{1}_L$ being decoded. A logical error will therefore have occurred, meaning an error has been applied to the logical information. If an error occurs on three physical bits then 
+A majority vote will count one $\ket{0}$ and two $\ket{1}$'s, leading to $\ket{1}_L$ being decoded. A logical error will therefore have occurred, meaning an error has been applied to the logical information. 
+
+If an error occurs on three physical bits then 
 \begin{equation}
 \ket{0}_L = \ket{000} \xrightarrow{\rm Noisy~ Channel} (X \otimes X \otimes X) \ket{000} = \ket{111},
 \end{equation}
 meaning the $\ket{0}_L = \ket{000}$ codeword is flipped to the $\ket{1}_L=\ket{111}$ codeword. A majority vote will therefore decode $\ket{1}_L$, meaning a logical error will have occurred whilst believing that no physical error has occurred. 
 
-The repetition code is able to detect and then correct errors if the noisy channel consists of only a single bit flip. It is able to only detect errors if the noisy channel consists of one or two bits flip. Hence, for singular errors, the  repetition code is an error correcting code, whilst for one or two errors it is an error detecting code.  
+The repetition code is therefore able to detect and then correct errors if the noisy channel consists of only a single bit flip. It is only able to detect errors if the noisy channel consists of one or two bits flip. Hence, for singular errors, the  repetition code is an error correcting code, whilst for one or two errors it is an error detecting code.  
 
 ### Code Distance
 
@@ -135,7 +137,7 @@ There exists the need for new error correcting codes when considering quantum sy
     :::{dropdown} Proof 
     
     
-    Firstly, note that an error applied to a qubit is just some unitary operator, $U$. 
+    Firstly, note that an error applied to a qubit is just some unitary operator, $U$. (Note, this is not true if the error is some channel). 
     
     Given that the set of operators $\{ \mathbb{I}, X, Y, Z \}$ form an operator basis for all $2 \times 2$ complex matrices, there exists complex numbers $\alpha, \beta, \gamma, \delta$ such that 
     \begin{equation}

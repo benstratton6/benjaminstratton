@@ -71,9 +71,10 @@ parts:
       - file: ResourceTheoriesGlossaryofTerms.md
   - caption: Error Correction
     chapters: 
-      - file: errorCorrection_classical.md
-      - file: errorCorrection_QuantumRepetitionCode.md
-      - file: errorCorrection_StabliizerFormalism.md
+      - file: errorCorrection1_classical.md
+      - file: errorCorrection2_QuantumRepetitionCode.md
+      - file: errorCorrection4_QECStructure.md
+      - file: errorCorrection3_StabliizerFormalism.md
       - file: errorCorrection_glossary.md
   - caption: Important Mathematical Notions
     chapters:
