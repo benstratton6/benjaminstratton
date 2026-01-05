@@ -134,7 +134,28 @@ V \Pi_L V^\dagger = U_j \Pi_L U_j.
 \end{equation}
 This means that both the errors $U_j$ and $V$ map the code space to the same subspace. If one now measures $O$ and gets the outcome $\lambda_j$, they will not be able to tell if the error $U_j$ or $V$ has occurred. They will be able to detect the presence of an error, but not necessarily correct it. 
 
-Instead, imagine there exists another error that maps the logical space to a subspace that is partly supported in $U_i \Pi_L U_i$ and partly support in $U_j \Pi_L U_j$. A measurement of $O$ will project the state into either the $U_i \Pi_L U_i$ subspace or the $U_j \Pi_L U_j$. This will alter the logical information in a way that is not recoverable based only the output eigenvalue from measuring $O$. Hence, such errors are not correctable. 
+Instead, imagine there exists another error that maps the logical space to a subspace that is partly supported in $U_i \Pi_L U_i$ and partly support in $U_j \Pi_L U_j$. A measurement of $O$ will project the state into either the $U_i \Pi_L U_i$ subspace or the $U_j \Pi_L U_j$. This will alter the logical information in a way that is not recoverable based only the output eigenvalue from measuring $O$. Hence, such errors are not correctable, unless there exists some unitary $\tilde{V}$ such that $\tilde{V}V \vert \psi \rangle_L=\vert \psi \rangle_L$ and $\tilde{V}U_j \vert \psi \rangle_L=\vert \psi \rangle_L$. If so, when the measurement of $O$ gives the outcome $\lambda_j$, $\tilde{V}$ can be applied. 
+
+:::{dropdown} Example
+
+Consider the [two qubit repetition code](#target_error_correction_2_bit_repetition_code), which has code space 
+\begin{equation}
+\mathfrak{C}_2 = {\rm Span} \{ \ket{00}, \ket{11} \}.
+\end{equation}
+
+An arbitrary single qubit is therefore encoded as 
+\begin{equation}
+\vert \psi \rangle_L = \alpha \ket{00} + \beta \ket{11} : \vert \alpha \vert^2 + \vert \beta \vert^2=1.
+\end{equation}
+It can be seen that a single qubit $Z$ error on either physical qubit would take the logical state to the same state
+\begin{equation}
+\begin{split}
+Z_1 \ket{\psi}_L &= \alpha \ket{00} - \beta \ket{11} \\
+Z_2 \ket{\psi}_L &= \alpha \ket{00} - \beta \ket{11}. 
+\end{split}
+\end{equation}
+Therefore, whilst different errors, they can both be corrected via the same unitary. Namely, both can be correct by applying $Z_1$. 
+:::
 
 ### Conclusion
 

@@ -127,11 +127,15 @@ Each stabliser, $P_i$, is an element of the Pauli-group and can therefore be wri
 \begin{equation}
 P_i = \Pi^i_{+1} - \Pi^i_{-1},
 \end{equation}
-where $\Pi^i_{+1}$ is the projector onto the $+1$ eigenspace $P_i$, and $\Pi^i_{-1}$ the projector onto the $-1$ eigenspace. One can then defined the code space via the projector
+where $\Pi^i_{+1}$ is the projector onto the $+1$ eigenspace of $P_i$ and $\Pi^i_{-1}$ the projector onto the $-1$ eigenspace of $P_i$. One can then defined the code space via the projector
 \begin{equation}
 \Pi_{\mathfrak{C}_L} = \cap_{i=0}^{\vert \mathcal{S} \vert} \Pi^i_{+1},
 \end{equation}
 which is the projector onto the intersection of all the positive eigenspaces of the stabilizers. 
+
+The intersection of all the different combinations of the positive and negative eigenspaces of the stabilizers are all pairwise orthogonal, and they define each of the orthogonal subspaces of the QEC code.  
+
+An error that maps the code space to one of these orthogonal subspaces can therefore be detected by measuring the observable who's eigenspaces are exactly these orthogonal subspaces.  
 
 <!-- Given the set of stabilizers is defined for an arbitrary state within the code space, the set of stablizers should be thought of as stabilizing the code space rather than a given logical state. In reality, the code space is defined in the opposite direction: e -->
 
@@ -193,7 +197,9 @@ such that a $Z$ measurement performed on the ancilla now gives the outcome $-1$ 
 
 By performing the above circuit and measuring the ancilla one can therefore determine if the logical state is in the $+1$ or $-1$ eigenspace of the stabilizer $P$. 
 
-Note, this method of performing measurements only really works for measuring observables in $\mathcal{P}_n$ on stabilizer states.
+This is an example of [generalised measurement](#Generalised_measurement_full_definition_target) and [Naimark’s dilation theorem](#naimark_dilation_theorem). 
+
+<!-- Note, this method of performing measurements only really works for measuring observables in $\mathcal{P}_n$ on stabilizer states. -->
 
 :::{dropdown} Parity Measurements Circuits
 

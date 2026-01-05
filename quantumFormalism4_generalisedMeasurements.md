@@ -25,6 +25,7 @@ exports:
 This section of notes is partly based on content from Chapter 3 of [Resource of the Quantum world](https://doi.org/10.48550/arXiv.2402.05474)
 
 ### Definition 
+(Generalised_measurement_full_definition_target)=
 A generalised measurement is a set of $m$ operators, $\{ M_{x} \}_{x=0}^{m-1}$, such that 
 (Generalised_measurement_definition_target)=
 \begin{equation}
@@ -110,7 +111,7 @@ The first condition carries from the definition of the generalised measurement a
 All POVM's can be physically realised by just performing the associated generalised measurement and ignoring the post measurement state.   
 
 **Naimark's dilation theorem**
-
+(naimark_dilation_theorem)=
 Naimark's dilation theorem states that every POVM can be realised by a projective measurement (the measurement of some [observable](#obersvables_definition_observable_page_target)) on a higher dimensional space. 
 
 Consider a POVM, $\mathcal{T}$, acting on a Hilbert space $\mathcal{H}^{d}$ given by 
