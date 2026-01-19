@@ -37,6 +37,8 @@ P_1P_2 = (\pm)P_2P_1 ~~ \forall ~ ~ P_1, P_2~\in~\mathcal{P}_n,
 
 All elements of the Pauli-group have eigenvalues $\{+1, -1\}$ or $\{+i, -i\}$. Here, we mostly consider just the elements with eigenvalues $\{+1, -1\}$ (the Hermitian elements of the Pauli-group). 
 
+See the [Pauli Group Page](#Pauli_group_page_target) for more detail.
+
 ## Stabilizer Codes
 
 ### Definition

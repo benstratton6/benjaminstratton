@@ -275,6 +275,7 @@ where we have used the cyclic properties of the trace. Hence, each component of 
 \textrm{Det}(O) \epsilon_{ijk} = \sum_{l,m,n=1}^3 \alpha_{li} \alpha_{mj} \alpha_{nk} \epsilon_{lmn}, \label{eq:determinateEquation}
 \end{equation}
 where
+(Levi_Civita_symbol_target_bloch)=
 \begin{equation}
 \epsilon_{ijk} = \begin{cases}
     1 \quad &\textrm{if}~(i,j,k)~\textrm{is an even permutation of}~(1,2,3) \\

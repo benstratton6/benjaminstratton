@@ -48,25 +48,31 @@ parts:
       - file: quantumFormalism10_symmetry
       - file: quantumFormalism11_wignerFunctions
       - file: quantumFormalism_glossary
-  - caption: Quantum Information 1
+  - caption: Quantum Information
     chapters:
       - file: QuantumInfo5_teleportation
       - file: QuantumInfo6_superDenseCoding
       - file: QuantumInfo7_noCloning
       - file: QuantumInfo9_stateDiscrimination
       - file: QuantumInfo4_stateExclusion
-      - file: QuantumInfo10_Weyl_Operators
-      - file: QuantumInfo1_entropyFunction
       # - file: QuantumInfo8_Haar_Measure
       - file: QuantumInfo2_AlgorithmicCooling
       - file: QuantumInfo3_UsefulTricks
       - file: QuantumInfo_Glossary
+  - caption: Quantum Information Tools
+    chapters:
+      - file: ToolsQuantumInfo1_Pauli_Group
+      - file: ToolsQuantumInfo2_Weyl_Operators.md
+      - file: ToolsQuantumInfo3_entropyFunction
+      - file: ToolsQuantumInfo_Glossary
+        hidden: true
   - caption: Resource Theories   
     chapters:
       - file: ResourceTheories1_introduction.md
       - file: ResourceTheories2_criteria.md
       - file: ResourceTheories3_quantifyingResources.md
       - file: ResourceTheories4_coherence
+      - file: ResourceTheories6_magic.md
       - file: ResourceTheories5_resource_preservability_theories
       - file: ResourceTheoriesGlossaryofTerms.md
   - caption: Error Correction

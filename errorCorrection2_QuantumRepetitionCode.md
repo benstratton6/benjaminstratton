@@ -20,7 +20,7 @@ exports:
     article_type: Report
 ---
 (error_correction_repetition_code_page_target)=
-The Quantum Repetition Code comes in two flavours, one protects against bit-flip errors and the other protects against phase-flip errors. As with the classical repetition code, the code works increasing the size of the Hilbert space, allowing logical qubits to be encoded in multiple physical qubits.  
+The Quantum Repetition Code comes in two flavours, one protects against bit-flip errors and the other protects against phase-flip errors. As with the classical repetition code, the code works by increasing the size of the Hilbert space, allowing logical qubits to be encoded in multiple physical qubits.  
 
 
 (target_error_correction_2_bit_repetition_code)=
@@ -132,7 +132,7 @@ Once again, a measurement of either $Z_1 \otimes Z_2 \otimes \mathbb{I}_3$ or $\
 Z_1 \otimes Z_2 \otimes \mathbb{I} \big( \alpha \ket{000} + \beta \ket{111} \big) =  \big( \alpha \ket{000} + \beta \ket{111} \big).
 \end{align*}
 
-Label the measurement outcome of $Z_1 \otimes Z_2 \otimes \mathbb{I}_3$ as $\lambda_1$ and $\mathbb{I}_1 \otimes Z_2 \otimes Z_3$ as $\lambda_1$, such that the syndrome is $(\lambda_1, \lambda_2)$. The following error/syndrome relationship can then be shown
+We label the measurement outcome of $Z_1 \otimes Z_2 \otimes \mathbb{I}_3$ as $\lambda_1$ and $\mathbb{I}_1 \otimes Z_2 \otimes Z_3$ as $\lambda_2$, such that the syndrome is $(\lambda_1, \lambda_2)$. The following error/syndrome relationship can then be shown
 \begin{align*}
 \mathbb{I} &\rightarrow (0,0), \\
 X_3 &\rightarrow (0,1), \\

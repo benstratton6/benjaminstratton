@@ -27,3 +27,6 @@ exports:
 
 (dynamical_resource_theory)=
 **Dynamic Resource Theory:** A resource theory where the underlying objects are quantum channels.
+
+(universal)=
+**Universal:** A set of quantum operations is said to be universal if any unitary can be created through some combination of the set of operations. 
