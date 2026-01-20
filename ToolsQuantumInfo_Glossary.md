@@ -23,6 +23,6 @@ extends:
 ---
 
 (group_generator_definition)=
-**Group Generator:** Given a group $G$, the generator of the group is minimum set of elements of the group that are independent, meaning they cannot be written as a product of any other group elements, but all other group elements can be written as a product of the group elements in the generator. 
+**Group Generator:** the generator of a group is the minimum set of elements of the group that are independent, meaning they cannot be written as a product of any other group elements, but all other group elements can be written as a product of them i.e., all group elements in the generator can be used to create all other group elements. 
 
 
