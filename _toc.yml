@@ -95,5 +95,8 @@ parts:
       - file: economics1_utilityFunctions.md
       - file: economics2_risk.md
       - file: economics_glossary.md
+  - caption: Miscellaneous 
+    chapters:
+      - file: Miscellaneous_books.md
       
 
