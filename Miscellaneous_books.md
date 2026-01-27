@@ -20,10 +20,24 @@ exports:
     article_type: Report
 ---
 
-Here are a list of books I have read since 2021 with a (1-5)⭐ rating of what I thought of them. 
+Here are a list of books I have read since 2021 with a (1-5)⭐ rating:
 
-With each genre, they are roughly in the order in which I read them. 
+  - 1 ⭐ : Not Good
+  - 2 ⭐ : Okay
+  - 3 ⭐ : Enjoyable 
+  - 4 ⭐ : Good 
+  - 5 ⭐ : Excellent 
+
+Within each genre, they are roughly in the order in which I read them. 
+
 # Fiction 
+
+## Fantasy 
+
+- **The Fellowship of the Ring**, _John.R.R Tolkien_, 4 ⭐
+- **The Two Towers**, _John.R.R Tolkien_, 4 ⭐
+- **The Return of the King**, _John.R.R Tolkien_, 4 ⭐
+- **The Hobbit**, _John.R.R Tolkien_, 5 ⭐
 
 ## Science Fiction 
 
@@ -36,10 +50,11 @@ With each genre, they are roughly in the order in which I read them.
 - **Forever War**, _Joe Haldeman_, 4 ⭐
 - **Second Foundation**, _Isaac Asimov_, 4 ⭐
 - **Foundation and Empire**, _Isaac Asimov_, 3 ⭐
+- **The Early Asimov - Volume 1**, _Isaac Asimov_, 3 ⭐
 - **Fahrenheit 451**, _Ray Bradbury_, 3 ⭐
 - **Brave New World**, _Aldous Huxley_, 4 ⭐
 - **I, Robot**, _Isaac Asimov_, 4 ⭐
-- **Mail Mary**, _Andy Weir_, 5 ⭐
+- **Hail Mary**, _Andy Weir_, 5 ⭐
 - **Starship Troopers**, _Robert A. Heinlein_, 4 ⭐
 - **Foundations Edge**, _Isaac Asimov_, 3 ⭐
 - **The Three Body Problem**, _Liu Cixin_, 5 ⭐
@@ -68,7 +83,7 @@ With each genre, they are roughly in the order in which I read them.
 
 - **Life 3.0**, _Max Tegmark_, 4 ⭐
 - **Regenesis: Feeding the World Without Devouring the Planet**, _George Monbiot_, 4 ⭐
-- **The Order of Time**, _Carlo Rovelli_, 4 ⭐
+- **The Order of Time**, _Carlo Rovelli_, 3 ⭐
 - **The Rise and Fall of the Dinosaurs**, _Steve Brusatte_, 5 ⭐
 
 ## Politics 
@@ -78,11 +93,12 @@ With each genre, they are roughly in the order in which I read them.
 
 ## Economics
 
+- **Brexitland**, _Maria Sobolewska and Robert Ford_, 5 ⭐
 - **Economics: A User's Guide**, _Ha-Joon Chang_, 5 ⭐
 - **Utopia for Realists**, _Rutger Bregman_, 3 ⭐
-- **How to Be an Anticapitalist in the Twenty-First Century**, _Erik Olin Wright_, 4 ⭐
+- **How to Be an Anticapitalist in the Twenty-First Century**, _Erik Olin Wright_, 3 ⭐
 - **Doughnut Economics**, _Kate Raworth_, 4 ⭐
-- **The Money Machine: How the City Works**, _Philip Coggan_, 4 ⭐
+- **The Money Machine: How the City Works**, _Philip Coggan_, 3 ⭐
 
 ## History 
 
