@@ -10,8 +10,7 @@ authors:
     #   - Curvenote
     orcid: 0009-0001-2746-3668
     email: ben.stratton@bristol.ac.uk
-license: 
-keywords: Pauli Operators, Qubits, Complete Basis.   
+license:   
 abstract: Books I have read and enjoyed 
 exports:
 #   - format: docx
