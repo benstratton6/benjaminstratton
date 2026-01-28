@@ -62,6 +62,8 @@ Please do get in touch with me if you would like to add anything, think somethin
 
 ## Talks
 
+error
+
 - **Purity Enhancement from Athermaility Enhancement,** [_slides_](Talk_5_Purity_Enhancement_from_Athermaility_Enhancement.pptx)
     1. Département de Physique Appliquée, University of Geneva, Switzerland, September 2025, (_**Seminar**_).
     2. Grup d'Informació Quàntica (GIQ), Universitat Autònoma de Barcelona, Spain, October 2025. (_**Seminar**_).
