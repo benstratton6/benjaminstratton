@@ -65,14 +65,13 @@ parts:
       - file: ToolsQuantumInfo2_Weyl_Operators.md
       - file: ToolsQuantumInfo3_entropyFunction
       - file: ToolsQuantumInfo_Glossary
-        hidden: true
   - caption: Resource Theories   
     chapters:
       - file: ResourceTheories1_introduction.md
       - file: ResourceTheories2_criteria.md
       - file: ResourceTheories3_quantifyingResources.md
       - file: ResourceTheories4_coherence
-      - file: ResourceTheories6_magic.md
+      # - file: ResourceTheories6_magic.md
       - file: ResourceTheories5_resource_preservability_theories
       - file: ResourceTheoriesGlossaryofTerms.md
   - caption: Error Correction
