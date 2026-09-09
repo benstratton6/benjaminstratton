@@ -112,7 +112,7 @@ For more on basis [see here](#basis_basis_target)
 ::::
 
 ### Subspaces 
-
+(vector_subspaces_definition_target)=
 Let $V$ be a vector space over $\mathbb{F}$. A subset $U \subset V$ is a subspace of $V$ if the following conditions hold
 1. $U \neq \emptyset$
     - The subset is not empty.

@@ -22,9 +22,8 @@ exports:
 (basis_page_target)=
 ### Basis Conditions
 
-(basis_basis_target)=
 Let $V$ be a vector space and $a_{1}, ~a_{2}, \ldots, ~a_{n}~\in~V~\forall~n$.  
-
+(basis_basis_target)=
 The set of vectors $\{ a_{1}, ~a_{2}, \ldots, ~a_{n} \} $ are a basis of $V$ if 
 1. $\textrm{Span}(\{ a_{1}, ~a_{2}, \ldots ~a_{n} \}) = V$
     - Any vectors in $V$ can written as a linear combination of the vectors in $\{ a_{1}, ~a_{2}, \ldots ~a_{n} \} $ [💭](#span_definition_target). 

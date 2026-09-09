@@ -68,7 +68,7 @@ Typically, steps (1) and (2) occur at the same time. A measurement is made on th
 On the other hand, some codes are able to fulfill (1) without being able to fulfill (2) or (3). Such codes are said to perform **error detection**. In these cases, it is known that an error has occurred, but it is not known how to correct it. 
 
 With only the use of error detection, one can ensure the correct performance of some information processing protocol in the presence of noise by just repeat the protocol until it happens error free, discarding any cases where an error is detected and starting again. Although, depending on the probability of an error occurring, this might be very inefficient. 
-
+(classical_error_correction_page)=
 ### The Repetition Code
 
 A simple example of a classical error correcting code is the 3-bit repetition code. Here, each bit of logical information is encoded via three physical bits of information. Specifically,
@@ -117,6 +117,7 @@ The rate, $R$, of an error correcting code is then the ratio of the logical bits
 \begin{equation}
 R = \frac{k}{n}.
 \end{equation}
+(section_parity_check_codes_target)=
 
 ### Parity Check Codes
 
@@ -138,7 +139,7 @@ p(\bm{a}) = \begin{cases}
 \end{equation}
 
 ```
-
+(error_detection_with_parity_example)=
 ***Error Detection With Parity***
 
 We now demonstrate an error detecting code where $k=3$ logical bits are stored in $n=4$ physical bits, with the redundant $4$th bit storing the parity of the logical bits. 
@@ -179,6 +180,22 @@ Note, if it is assumed that most one error has occurred, including on the parity
 
 This code is an example of an error detecting code, as, even if we assume only one bit flip error has occurred, it is still not known _where_ that error has occurred i.e., to which bit. This examples does, however, demonstrate that parity checks are a powerful method for determining if bit-flip errors have occurred. 
 
+:::{dropdown} Code Words: Error Detection With Parity
+
+\begin{align*}
+&\ket{000}_L \rightarrow \ket{0000} \\
+&\ket{001}_L \rightarrow \ket{0011} \\
+&\ket{010}_L \rightarrow \ket{0101} \\
+&\ket{011}_L \rightarrow \ket{0110} \\
+&\ket{100}_L \rightarrow \ket{1001} \\
+&\ket{101}_L \rightarrow \ket{1010} \\
+&\ket{110}_L \rightarrow \ket{1100} \\
+&\ket{111}_L \rightarrow \ket{1111} \\
+\end{align*}
+
+:::
+
+(error_correction_with_parity_example)=
 ***Error Correction With Parity***
 
 We now give an example of where parity checks can be used to create an error correcting code. Interestingly, we will see that there is enough freedom to also error correct the parity bits if we assume at most one bit-flip occurred. 
@@ -198,6 +215,7 @@ s_2 &= b_1 \oplus b_3 \oplus p_2' \\
 s_3 &= b_2 \oplus b_3 \oplus p_3' \\
 \end{align*}
 It can now be verified through a quick calculation that, if it is assumed that at most one bit-flip error occurred, that there is enough combinations of syndromes to both detect and locate an error. Specifically, it is known that 
+(error_syndromes_of_parity_error_correction)=
 \begin{align*}
 (s_1, s_2, s_3) &\longrightarrow ~{\rm Bit ~Flipped} \\
 (0,0,0) &\longrightarrow ~{\rm None} \\
@@ -233,6 +251,21 @@ s_3 &= a_2 \oplus a_3 \oplus (p_3 \oplus 1) = 1 \\
 \end{align*}
 :::
 To correct the error, one needs to check the syndrome in the table and then flip the corresponding bit. 
+
+:::{dropdown} Code Words: Error Correction With Parity
+
+\begin{align*}
+&\ket{000}_L \rightarrow \ket{000,000} \\
+&\ket{001}_L \rightarrow \ket{001,011} \\
+&\ket{010}_L \rightarrow \ket{010,101} \\
+&\ket{011}_L \rightarrow \ket{011,110} \\
+&\ket{100}_L \rightarrow \ket{100,110} \\
+&\ket{101}_L \rightarrow \ket{101,101} \\
+&\ket{110}_L \rightarrow \ket{110,011} \\
+&\ket{111}_L \rightarrow \ket{111,000} \\
+\end{align*}
+
+:::
 
 In the next page, we will review the mathematical formulation of a broad class of quantum error correcting codes called linear codes. Firstly, however, we will argue why there is need to extend error correction to the quantum domain. 
 
