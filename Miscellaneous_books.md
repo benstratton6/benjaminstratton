@@ -136,6 +136,7 @@ Additional info:
 
 - **The Anarchy: The Relentless Rise of the East India Company**, _William Dalrymple_, 5 ⭐
 - **Homage to Catalonia**, _George Orwell_, 3 ⭐ 🛸
+- **Killers of the Flower Moon**, _David Grann_, 4 ⭐ 🛸
 
 # Data
 

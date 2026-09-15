@@ -33,7 +33,7 @@ https://doi.org/10.1103/PhysRevA.86.032324)
 - Lectures On Computation, Feynman, R.P.
 - [Quantum error correction and fault tolerance: A comprehensive tutorial](https://doi.org/10.48550/arXiv.2605.29137)
 - [Blog by Arthur Pesah](https://arthurpesah.me/)
--[But what are Hamming codes? The origin of error correction](https://www.youtube.com/watch?v=X8jsijhllIA)
+- [But what are Hamming codes? The origin of error correction](https://www.youtube.com/watch?v=X8jsijhllIA)
 
 ## Noise in Classical Information Processing
 
@@ -117,8 +117,8 @@ The rate, $R$, of an error correcting code is then the ratio of the logical bits
 \begin{equation}
 R = \frac{k}{n}.
 \end{equation}
-(section_parity_check_codes_target)=
 
+(section_parity_check_codes_target)=
 ### Parity Check Codes
 
 Here, we introduce the notion of parity checks and give some examples of how they can be used in classical error correcting codes. 
