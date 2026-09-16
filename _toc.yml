@@ -84,10 +84,11 @@ parts:
   - caption: Error Correction
     chapters: 
       - file: errorCorrection1_classical.md
-      - file: errorCorrection1_classical_linear_codes.md
+      - file: errorCorrection5_classical_linear_codes.md
       - file: errorCorrection2_QuantumRepetitionCode.md
       - file: errorCorrection4_QECStructure.md
       - file: errorCorrection3_StabliizerFormalism.md
+      # - file: errorCorrection6_subsystem_codes.md
       - file: errorCorrection_glossary.md
   - caption: Important Mathematical Notions
     chapters:

@@ -69,9 +69,22 @@ Let $(G, *)$ be a group and let $(H, *)$ be a [subgroup](#group_page_subgroup_de
 The centralizer of $(H,*)$ in $(G, *)$ is 
 (centralizer_definition_target)=
 \begin{equation}
-C_G(H) = \big\{ g \in G : ghg^{-1} = h ~\forall~h \in H \big\},
+C_G(H) = \big\{ g \in G : g * h = h * g ~\forall~h \in H \big\},
 \end{equation}
 meaning that the centralizer contains all the elements of $G$ that commute with all the elements of $H$. 
+
+### Centre 
+
+Let $(G, *)$ be a group.
+
+The centre of $(G, *)$ is 
+(centre_definition_target)=
+\begin{equation}
+C(G) = \big\{ g \in G : g * h = h * g ~\forall~h \in G \big\},
+\end{equation}
+meaning that the centralizer contains all the elements of $G$ that commute with all the other elements of $G$. 
+
+Note, $C(G) = C_G(G)$
 
 ## Normalizer 
 

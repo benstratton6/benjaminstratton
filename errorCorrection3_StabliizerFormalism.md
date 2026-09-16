@@ -44,6 +44,7 @@ See the [Pauli Group Page](#Pauli_group_page_target) for more detail.
 ### Definition
 
 The stabilizers of an error correcting code are defined as 
+(stabilizer_definition_target)=
 \begin{equation}
 \mathcal{S} = \big\{ P_i \in \mathcal{P}_n: P_i \ket{\psi}_L = \ket{\psi}_L~\forall~\ket{\psi}_L \wedge [P_i, P_j] = 0 ~ \forall ~ (i,j) \big\},
 \end{equation}
