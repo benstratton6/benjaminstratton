@@ -21,7 +21,7 @@ exports:
 ---
 
 There is much literature on groups, these particular notes were made using [](https://doi.org/10.48550/arXiv.2605.29137) and only pertain to discrete groups.
-
+(whole_groups_page_target)=
 ## Group Definition
 
 Consider a set $G$ and a [binary operation](#binary_operation_glossary) $* :  G \times G \rightarrow G$. Then $(G, *)$ is a group if the following conditions hold: 

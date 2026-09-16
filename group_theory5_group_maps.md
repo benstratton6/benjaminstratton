@@ -83,7 +83,7 @@ A group homomorphism that is [injective](#injective_linear_maps_target), meaning
 A group homomorphism that is [surjective](#Surjective_linear_maps_target), meaning that every point in the codomain (output space) can be reached via some input element. 
 
 ### Isomorphism 
-
+(Isomorphism_definition_target_group_definitions)=
 A group homomorphism that is [bijective](#bijective_definition_target), meaning that it is both injective and surjective.
 
 Given groups $(G, *)$ and $(H, \cdot)$, if an isomorphism exists between the groups, they are said to be isomorphic. 

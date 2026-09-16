@@ -20,7 +20,7 @@ exports:
     article_type: Report
 ---
 (Pauli_group_page_target)=
-The Pauli Group is a [group](https://en.wikipedia.org/wiki/Group_(mathematics)) formed by taking the tensor product of the Pauli operators and the identity operator. It consists of all combinations of the tensor products with phases $\{\pm 1, \pm i \}$. 
+The Pauli Group is a [group](#group_page_group_definition) formed by taking the tensor product of the Pauli operators and the identity operator. It consists of all combinations of the tensor products with phases $\{\pm 1, \pm i \}$. 
 
 ## Single Qubit Group
 
@@ -99,6 +99,14 @@ An important subset of the Pauli-group is the Pauli-strings
 \end{align*}
 which are the elements of the Pauli-group with global phase $+1$. 
 ```
+
+### Generators
+
+The $n$-qubit Pauli group is defined in terms of generators as 
+\begin{equation}
+\mathcal{P}_n = \langle X_j, Z_j, i \mathbb{I} \rangle_{j \in \{1,n\}}
+\end{equation}
+where $X_j$ and $Z_j$ act as the single qubit $X$ and $Z$ operators on the $j$th qubit respectively, and the identity everywhere else. 
 
 ### Properties
 
@@ -365,3 +373,59 @@ Below we highlight and prove key properties of the Pauli-group and the set of Pa
 
     
     :::
+
+(virtual_paulis_target_palui_group_page)=
+### Virtual Paulis  
+
+The generators of the $n$-qubit Pauli group given above act as single $X$ and $Z$ Pauli's on each physical qubit. There are $n$ $X$-type generators, and $n$ $Z$-type generators. 
+
+One can also select a different sub-set of the $n$-Pauli-group to be generators of the group. This set can be choosen to represent _virtual_ $X$ and $Z$ type operators, in the sense that they will follow the expected commutation relations. For example, if
+\begin{equation}
+\mathcal{P}_n = \langle X'_j, Z_j', i \mathbb{I} \rangle_{j \in \{1,n\}},
+\end{equation}
+then 
+(single_qubit_pauli_realtions)=
+\begin{align*}
+ [X'_j, X_k'] &= 0 ~\forall~j,k \in \{1,n\}, \\
+ [Z'_j, Z_k'] &= 0 ~\forall~j,k \in \{1,n\}, \\
+ [X'_j, Z_k'] &= 0 ~\forall~j,k \in \{1,n\}~{\rm if}~j \neq k, \\
+ \{X'_j, Z_k'\} &= 0 ~\forall~j=k.
+\end{align*}
+
+The set $\{X_j, Z_j\}_{j \in \{1,n\}}$ is [ismorphic](#Isomorphism_definition_target_group_definitions) to $\{X'_j, Z'_j\}_{j \in \{1,n\}}$. 
+
+Whilst each element of $\{X'_j, Z'_j\}_{j \in \{1,n\}}$ acts some single qubit Pauli operators on the physical qubits, they can be thought of as acting a single $X$ or $Z$ Pauli operator on one of $n$-virtual qubits. 
+
+:::{dropdown} More Details
+(more_detail_virtual_paulis_target)=
+To see this, let the eigenbasis of the mutually commuting operators $\{Z'_j\}_{j \in \{1,n\}}$ be labeled by a bit-strings $\bm{b} = b_1b_2...b_n \in \{0,1\}^n$, such that 
+\begin{equation}
+Z'_j \ket{b_1b_2b_3 \ldots b_n} = (-1)^{b_j} \ket{b_1b_2b_3 \ldots b_n}.
+\end{equation}
+Hence, if the $j$th bit of $\bm{b}$ is $0$, then the basis state $\ket{\bm{b}}$ is in the positive eigenspace of the operator $Z'_j$. 
+
+Consistency check: 
+- For $n$ qubits, there are $2^n$ basis states to span the $2^n$ dimensional space. 
+- Of the $2^n$ basis states, $2^{n-1}$ are in the postive eigenspace of $Z'_j$ and $2^{n-1}$ are in the negative eigenspace. 
+- The eigenvalue of the product of operators $Z'_jZ'_k$ on $\ket{\bm{b}}$ is $(-1)^{b_j \oplus b_k}$, which is their individual eigenvalues mulitpled, as expected for commuting observables. 
+
+The set of states $\big\{ \ket{\bm{b}} : b \in \{0,1\}^n \big\}$ can then be thought of as the computational basis states of the $n$-virtual qubits. 
+
+Now, as $\{X'_j, Z_j'\}=0$, it holds that 
+\begin{align*}
+Z'_j  X'_j \ket{b_1b_2b_3 \ldots b_n}  &= -X'_j Z'_j \ket{b_1b_2b_3 \ldots b_n} \\
+&= -(-1)^{b_j} X'_j \ket{b_1b_2b_3 \ldots b_n} \\
+&= (-1)^{b_j \oplus 1} X'_j \ket{b_1b_2b_3 \ldots b_n} \\
+&= X_j' Z_j' \ket{b_1b_2b_3 \ldots b_{j-1}(b_j \oplus 1)b_{j+1} \ldots b_n}.
+\end{align*}
+Therefore, 
+\begin{align*}
+X'_j \ket{b_1b_2b_3 \ldots b_n}  &= \ket{b_1b_2b_3 \ldots b_{j-1}(b_j \oplus 1)b_{j+1} \ldots b_n},
+\end{align*}
+meaning $X_j$ acts indepdently on the $j$th virtual qubit. Hence, in this basis, the virtual Pauli operators can be seen to act as single qubit Pauli-operators on each of the $n$ virtual qubits. 
+
+The eigenvectors of $X_j'$ can be seen to be 
+\begin{equation}
+\frac{\ket{b_1b_2b_3 \ldots b_{j-1}b_jb_{j+1} \ldots b_n} + \ket{b_1b_2b_3 \ldots b_{j-1}(b_j \oplus 1)b_{j+1} \ldots b_n}}{\sqrt{2}}.
+\end{equation}
+:::

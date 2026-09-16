@@ -405,3 +405,42 @@ as $0 \oplus i_2 = i_2$. The action of the second CNOT gate is then
 \end{align*}
 as $1 \oplus 1 = 0$. Hence, if $Z$ is measured on the computational basis then the parity is output with certainty. 
 :::
+
+(virtual_pauli_definition_of_stabilzer_codes_target)=
+### Virtual Paulis
+
+Stabilzers can also be formalised in terms of [virtual Paulis](#virtual_paulis_target_palui_group_page). 
+
+Here, $2n$ elements of $\mathcal{P}_n$ are choosen, $\{X'_j, Z'_j \}_{j \in \{1,n\}}$, such that the [single-qubit commutation relations](#single_qubit_pauli_realtions) are obeyed as expected. 
+
+The stabilzer group can then be choosen to be 
+\begin{equation}
+\mathcal{S} = \langle Z'_1, Z_2', \ldots Z_m' \rangle,
+\end{equation}
+where $m \leq n$. These are independent, mutually commuting, and do not contain $-\mathbb{I}$. 
+
+The normaliser of this stabilzer group is then 
+\begin{equation}
+N(\mathcal{S}) = \langle i\mathbb{I}, \mathcal{S}, Z'_{m+1}, Z'_{m+2}, \ldots, Z'_{n}, X'_{m+1}, X'_{m+2} \ldots, X'_{n} \rangle,
+\end{equation}
+which are the logical operators of the code. 
+
+:::{dropdown} More Details
+
+As detailed [here](#more_detail_virtual_paulis_target), the eigenbasis of these stabilzers can be labeled by bit-strings $\bm{b} = b_1b_2...b_n \in \{0,1\}^n$, such that 
+\begin{align*}
+Z'_j \ket{b_1b_2b_3 \ldots b_n} &= (-1)^{b_j} \ket{b_1b_2b_3 \ldots b_n}, \\
+X'_j \ket{b_1b_2b_3 \ldots b_n} &= (-1)^{b_j} \ket{b_1b_2b_3 \ldots b_{j-1}(b_j \oplus 1)b_{j+1} \ldots b_n}.
+\end{align*}
+As the code space is defined as the $+1$ eigenspace of the stabilzers, using this basis the code space can be defined as the space spanned by the states
+\begin{equation}
+\big\{ \ket{\bm{0}_m \bm{a}_{n-m}} : a \in \{0,1\}^{n-m} \big\}
+\end{equation}
+where $\bm{0}_m$ is the zero bit-string of length $m$.
+
+Consistency check: 
+- There are $2^{n-m}$ possible code-words, meaning $k=n-m$ qubits can be encoded. 
+- Elements in the normaliser act only on the final $n-m$ bits, and hence manipulate the code words (and hence the logical information) without effecting the first $m$ bits, keeping the state in the code space. 
+
+If a correctable error acts on the encoded state, it will map the first $m$ zeros bits to some other $m$ bit-string. This will then be the syndrome of the error correcting code, which will be extracted when the $m$ stabilzer generators are measured. 
+:::

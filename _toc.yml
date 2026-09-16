@@ -35,11 +35,11 @@ parts:
       - file: LinearAlgebraGlossary.md
   - caption: Group Theory
     chapters: 
-      - file: group_theory_group_definitions.md 
-      - file: group_theory_equilivance_relations.md
-      - file: group_theory_cosets.md
-      - file: group_theory_quotient_groups.md
-      - file: group_theory_group_maps.md
+      - file: group_theory1_group_definitions.md 
+      - file: group_theory3_equilivance_relations.md
+      - file: group_theory2_cosets.md
+      - file: group_theory4_quotient_groups.md
+      - file: group_theory5_group_maps.md
   - caption: Quantum Formalism
     chapters: 
       - file: quantumFormalism1_hilbertSpaces
@@ -88,7 +88,7 @@ parts:
       - file: errorCorrection2_QuantumRepetitionCode.md
       - file: errorCorrection4_QECStructure.md
       - file: errorCorrection3_StabliizerFormalism.md
-      # - file: errorCorrection6_subsystem_codes.md
+      - file: errorCorrection6_subsystem_codes.md
       - file: errorCorrection_glossary.md
   - caption: Important Mathematical Notions
     chapters:
