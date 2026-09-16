@@ -148,6 +148,14 @@ Additional info:
 
 Distribution of star ratings. Clearly I am quite generous. 
 ```
+```{figure} Miscellaneous_books_average_rating_by_genre.png
+:alt: non_fiction_genre
+:class: bg-primary
+:width: 500px
+:align: center
+
+Average star rating for each genre. Color dictates fiction or non-fiction and the number above is: average star count (number of books in the genre)
+```
 
 ```{figure} Miscellaneous_books_fiction_genre.png
 :alt: fiction_genre
@@ -166,5 +174,7 @@ Number of books within each fiction genre I have read. There is a clear preferen
 
 Number of books within each non-fiction genre I have read. 
 ```
+
+
 
 
