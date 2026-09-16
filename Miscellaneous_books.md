@@ -40,8 +40,8 @@ Within each genre, the lists are roughly in the order in which I read them.
   - 1 ⭐ : Not Good
   - 2 ⭐ : Okay
   - 3 ⭐ : Enjoyable 
-  - 4 ⭐ : Good 
-  - 5 ⭐ : Excellent 
+  - 4 ⭐ : Recommend 
+  - 5 ⭐ : Strongly recommend 
 
 ```
 
@@ -86,7 +86,7 @@ Additional info:
 - **Altered Carbon**, _Richard K. Morgan_, 5 ⭐
 - **Old Mans War**, _John Scalzi_, 3 ⭐
 - **Snow Crash**, _Neal Stephenson_, 3 ⭐ 🛸
-- **War of the Worlds**, _H.G.Wells_, 3 ⭐ 🛸
+- **War of the Worlds**, _H.G.Wells_, 2 ⭐ 🛸
 - **Contact**, _Carl Sagan_, 4 ⭐ 🛸
 - **Solaris**, _Stanisław Lem_, 4 ⭐ 🛸
 - **Children of Time**, _Adrian Tchaikovsky_, 5 ⭐ 🎧 🛸
