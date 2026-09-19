@@ -97,7 +97,7 @@ Additional info:
 - **Damascus Station**, _David McCloskey_, 4 ⭐
 - **The Spy Who Came in from the Cold**, _John le Carré_, 5 ⭐ 🛸
 - **Tinker Tailor Soldier Spy**, _John le Carré_, 5 ⭐ 🛸
-- **The Constant Gardener**, _John le Carré_, 5 ⭐ 🛸
+- **The Constant Gardener**, _John le Carré_, 4 ⭐ 🛸
 
 ## Historical Fiction
 - **Shogun**, _James Clavell_, 4 ⭐ 🛸
@@ -130,13 +130,18 @@ Additional info:
 - **How to Be an Anticapitalist in the Twenty-First Century**, _Erik Olin Wright_, 3 ⭐
 - **Doughnut Economics**, _Kate Raworth_, 4 ⭐
 - **The Money Machine: How the City Works**, _Philip Coggan_, 3 ⭐
-- **Why Nations Fail: The Origins of Power, Prosperity and Poverty**, _Daron Acemoglu & James A.Robinson_, 4 ⭐ 🛸
+- **Why Nations Fail: The Origins of Power, Prosperity and Poverty**, _Daron Acemoglu & James A.Robinson_, 5 ⭐ 🛸
 
 ## History 
 
 - **The Anarchy: The Relentless Rise of the East India Company**, _William Dalrymple_, 5 ⭐
 - **Homage to Catalonia**, _George Orwell_, 3 ⭐ 🛸
 - **Killers of the Flower Moon**, _David Grann_, 4 ⭐ 🛸
+
+## Memoir
+
+- **Educated**, _Tara Westover_, 3 ⭐ 🛸
+
 
 # Data
 
