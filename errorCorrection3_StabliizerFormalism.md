@@ -411,9 +411,9 @@ as $1 \oplus 1 = 0$. Hence, if $Z$ is measured on the computational basis then t
 
 Stabilzers can also be formalised in terms of [virtual Paulis](#virtual_paulis_target_palui_group_page). 
 
-Here, $2n$ elements of $\mathcal{P}_n$ are choosen, $\{X'_j, Z'_j \}_{j \in \{1,n\}}$, such that the [single-qubit commutation relations](#single_qubit_pauli_realtions) are obeyed as expected. 
+Here, $2n$ elements of $\mathcal{P}_n$ are chosen, $\{X'_j, Z'_j \}_{j \in \{1,n\}}$, such that the [single-qubit commutation relations](#single_qubit_pauli_realtions) are obeyed as expected. 
 
-The stabilzer group can then be choosen to be 
+The stabilzer group can then be chosen to be 
 \begin{equation}
 \mathcal{S} = \langle Z'_1, Z_2', \ldots Z_m' \rangle,
 \end{equation}
