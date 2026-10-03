@@ -101,6 +101,7 @@ Additional info:
 
 ## Historical Fiction
 - **Shogun**, _James Clavell_, 4 ⭐ 🛸
+- **Pachinko**, _Min Jin Lee_, 5 ⭐ 🛸
 
 ## Other 
 

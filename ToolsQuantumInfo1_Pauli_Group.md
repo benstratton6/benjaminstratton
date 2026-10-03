@@ -379,7 +379,7 @@ Below we highlight and prove key properties of the Pauli-group and the set of Pa
 
 The generators of the $n$-qubit Pauli group given above act as single $X$ and $Z$ Pauli's on each physical qubit. There are $n$ $X$-type generators, and $n$ $Z$-type generators. 
 
-One can also select a different sub-set of the $n$-Pauli-group to be generators of the group. This set can be choosen to represent _virtual_ $X$ and $Z$ type operators, in the sense that they will follow the expected commutation relations. For example, if
+One can also select a different sub-set of the $n$-Pauli-group to be generators of the group. This set can be chosen to represent _virtual_ $X$ and $Z$ type operators, in the sense that they will follow the expected commutation relations. For example, if
 \begin{equation}
 \mathcal{P}_n = \langle X'_j, Z_j', i \mathbb{I} \rangle_{j \in \{1,n\}},
 \end{equation}
