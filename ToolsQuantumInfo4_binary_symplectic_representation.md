@@ -100,11 +100,15 @@ From the above it can be seen that
 \begin{equation}
 P_jP_k = (-1)^{(z_k \cdot x_j) \oplus (z_j \cdot x_k)} P_kP_j.
 \end{equation}
-Therefore, the Pauli-strings represented by the bit-strings $p_j$ and $p_k$ commute if
+Therefore, the Pauli-strings represented by the bit-strings 
+\begin{equation}
+p_j = (x_j \mid z_j) ~ ~ {\rm and} ~ ~ p_k = (x_k \mid z_k)
+\end{equation}
+commute if
 \begin{equation}
 (z_j \cdot x_k) \oplus (z_k \cdot x_j) = 0 ~ {\rm mod}~2,
 \end{equation}
-which is the binary symplectic inner product of the bit-strings $p_j = (x_j \mid z_j)$ and $p_k = (x_k \mid z_k)$. 
+which is the binary symplectic inner product of these bit-strings.
 
 ## $n$-qubits Pauli-strings
 
@@ -175,8 +179,12 @@ From the above, it can be seen that
 \begin{equation}
 PQ = (-1)^{(\bm{z}_p \cdot \bm{x}_q) \oplus (\bm{z}_q \cdot \bm{x}_p)} QP.
 \end{equation}
-Therefore, the Pauli-strings represented by the bit-strings $p$ and $q$ commute if
+Therefore, the Pauli-strings represented by the bit-strings 
+\begin{equation}
+p = (\bm{x}_p \mid \bm{z}_p) ~ ~ {\rm and} ~ ~ q = (\bm{x}_q \mid \bm{z}_q)
+\end{equation}
+commute if
 \begin{equation}
 (\bm{z}_p \cdot \bm{x}_q) \oplus (\bm{z}_q \cdot \bm{x}_p) = 0 ~ {\rm mod}~2,
 \end{equation}
-which is the binary symplectic inner product of the bit-strings $p = (\bm{x}_p \mid \bm{z}_p)$ and $q = (\bm{x}_q \mid \bm{z}_q)$. 
+which is the binary symplectic inner product of these bit-strings. 
