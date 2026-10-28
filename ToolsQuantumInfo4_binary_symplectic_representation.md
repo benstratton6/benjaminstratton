@@ -12,7 +12,7 @@ authors:
     email: ben.stratton@bristol.ac.uk
 license: 
 keywords: Pauli Strings, Complete Basis, Binary.   
-abstract: Details, properties and applications of the Pauli Group   
+abstract: An overview of the binary symplectic representation of Pauli-strings. 
 exports:
 #   - format: docx
   - format: pdf
