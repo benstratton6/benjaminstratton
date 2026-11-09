@@ -91,6 +91,7 @@ Additional info:
 - **Solaris**, _Stanisław Lem_, 4 ⭐ 🛸
 - **Children of Time**, _Adrian Tchaikovsky_, 5 ⭐ 🎧 🛸
 - **The Moon is a Harsh Mistress**, _Robert A. Heinlein_, 3 ⭐ 🛸
+- **Anathem**, _Neal Stephenson_, 4 ⭐ 🛸
 
 ## Spy 
 
