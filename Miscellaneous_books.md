@@ -123,6 +123,7 @@ Additional info:
 - **How Civil Wars Start**, _Barbara F. Walter_, 5 ⭐ 🎧
 - **How Westminster Works … and Why It Doesn’t**, _Ian Dunt_, 5 ⭐
 - **Politics on the Edge**, _Rory Stewart_, 4 ⭐
+- **Blood and Oil: Mohammed Bin Salman's Ruthless Quest For Global Power**, _Bradley Hope & Justin Scheck_, 3 ⭐ 🛸
 
 ## Economics
 
