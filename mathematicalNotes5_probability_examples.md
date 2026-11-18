@@ -1,5 +1,5 @@
 ---
-title: Probability Examples
+title: Probability
 subject: Tutorial
 subtitle: 
 # short_title: How to MyST
@@ -19,6 +19,112 @@ exports:
     template: physical_review_journals
     article_type: Report
 ---
+
+## Definitions
+
+Probability aims to put a numerical value on how likely it is for different events to occur; it is a number between $0$ and $1$, where $0$ means it will never occur and $1$ means it will occur with certainty. 
+
+The probability of outcome $A$ occurring can therefore be denoted as 
+\begin{equation}
+P(A) \in [0,1].
+\end{equation}
+If the event either happens or does not with certainty, then the probability that the event does not occur is given by 
+\begin{equation}
+1 - P(A).
+\end{equation}
+
+### Marginal Probability
+Consider now two events, $A$ and $B$. The probability that event $A$ occurs independently of event $B$, denoted $P(A)$, is called the **marginal probability** of $A$. The marginal probability of event $B$ is then $P(B)$. 
+
+### Joint Probability
+The probability of both event $A$ and event $B$ occurring is called the **joint probability**, which is denoted
+\begin{equation}
+P(A \cap B) \in [0,1].
+\end{equation}
+
+### Conditional Probability
+The probability of event $A$ occurring, given that event $B$ has already occurred, is called the **conditional probability**, and is denoted
+\begin{equation}
+P(A \vert B) \in [0,1].
+\end{equation}
+
+### Independent Events
+
+Events $A$ and $B$ are **independent** if the occurrence of $B$ does not effect the probability of $A$ occurring. 
+
+In this case, the following relationship between the marginal, joint and conditional probabilites apply: 
+\begin{align*}
+P(A \vert B) &= P(A) \\
+P(B \vert A) &= P(B) \\
+P(A \cap B) &= P(A) \times P(B)
+\end{align*}
+
+### Mutual Exclusivity
+
+Events $A$ and $B$ are **mutually exclusive** if they cannot both occur at the same time. 
+
+In this case, the joint probability of the two events, that is the probability that they both occur, must be zero:
+\begin{equation}
+P(A \cap B)=0.
+\end{equation}
+
+## Probability Equations
+
+Here are some relationships between the marginal, joint and conditional probabilities. 
+
+### Chain Rule of Probability
+
+The chain rule of probability relates the marginal, joint and conditional probabilites of events $A$ and $B$ as
+(chain_rule_probability_page)=
+\begin{equation}
+P(A \cap B) = P(A \vert B) \times P(B),
+\end{equation}
+meaning that the probability of both event $A$ and $B$ occurring is equal to the probability of event $A$ occurring given event $B$ has occurred, multiplied by the probability that event $B$ occurs. 
+
+The rule extends to more events too. Consider now a third event, $C$. It then holds that 
+\begin{equation}
+P(A \cap B \cap C) = P(A \vert B, C) \times P(B \cap C),
+\end{equation}
+where $P(A \cap B \cap C)$ is the joint probability of events $A,B$ and $C$ occurring; $P(B \cap C)$ is the joint probability of events $B$ and $C$ occurring, and $P(A \vert B,C)$ is the probability of event $A$ occurring given that event $B$ and $C$ have occurred. 
+
+### Bayes' theorem
+
+Bayes' theorem relates the marginal distribution $P(A \vert B)$ to $P(B \vert A)$ as
+(bayes_theorem_target_probability_page)=
+\begin{equation}
+P(A \vert B) = \frac{P(B \vert A)P(A)}{P(B)}.
+\end{equation} 
+It is commonly used to update the probability that an event $A$ will occur when some additional piece of evidence in the form of event $B$ has occurred. 
+
+Note, Bayes' theorem arises from that fact the chain rule applies equally for both $A$ and $B$, such that
+\begin{align*}
+P(A \cap B) &= P(A \vert B) \times P(B) \\
+P(A \cap B) &= P(B \vert A) \times P(A).
+\end{align*}
+Equating these two gives Bayes' rule. 
+
+:::{dropdown} **Alternative Form of Bayes' theorem**
+
+From the [chain rule](#chain_rule_probability_page) it holds that
+\begin{equation}
+P(A \vert B) = \frac{P(A \cap B)}{P(B)}.
+\end{equation} 
+As noted above, it also follows that 
+\begin{equation}
+P(A \cap B) = P(B \vert A) P(A).
+\end{equation}
+Now, denoting event $A$ not occurring by $\overline{A}$, it holds that 
+\begin{align*}
+P(B) &= P(A \cap B) + P(\overline{A} \cap B) \\
+&= P(B \vert A)P(A) + P(B \vert \overline{A})P(\overline{A}).
+\end{align*}.
+Putting this together, one gets that 
+\begin{equation}
+P(A \vert B) = \frac{P(B \vert A) P(A)}{P(B \vert A)P(A) + P(B \vert \overline{A})P(\overline{A})}.
+\end{equation} 
+:::
+
+## Probability Examples
 
 The problems presented here were discussed during a Bristol Quantum Information Theory group meeting, they taught me something about probability so I thought I would share them here. 
 
